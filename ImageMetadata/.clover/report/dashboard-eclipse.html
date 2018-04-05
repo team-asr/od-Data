@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=${charset}"/>
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+    <link rel="stylesheet" href="style.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+
+    <title>Clover</title>
+</head>
+
+<body style="min-width: 200px;">
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A summary of the projects overall coverage.">Coverage</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <span>
+                    1 classes,
+                    0 /
+                    27 elements
+                </span>
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A summary of results of all tests that were run.">Test results</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:testresults'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                <span>
+                    0 / 0 tests
+                    (0 secs)
+                </span>
+                                        <div class="aui-message aui-message-warning">
+        <p class="title">
+            <strong>No test results</strong>
+        </p>
+        <p>No test results could be found. Please ensure that you have instrumented your unit tests correctly.</p>
+    </div>
+                            </div>
+        </div>
+
+    
+    
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="The most complex packages in the project.">Most complex packages</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table>
+                                            
+                                                <tr><td>1. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td><a class="tag" href="javapkg:org.asr.tools">org.asr.tools</a> (6)</td></tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="The most complex classes in the project.">Most complex classes</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table>
+                                            
+                                                <tr><td>1. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td>
+                            <a  class="tag" href="javaclass:/org/asr/tools/Metadata.java#17_14"  title="org.asr.tools.Metadata">Metadata</a>
+                            (6)
+                        </td></tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A list of classes that have the highest complexity and least coverage. These pose the greatest potential risk to the project.">
+                        Top 1 project risks</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:toprisks'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div>
+                    
+                                                                            <a class="tag" href="javaclass:/org/asr/tools/Metadata.java#17_14"
+                               style="font-size: 25px;color:#d04437"
+                               title="Average Method Complexity - 3 , Coverage - 0% ">Metadata</a>
+                                                            </div>
+            </div>
+        </div>
+
+            <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A list of methods least tested, ranked in decreasing complexity.">Least tested methods</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:quickwins'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table>
+                                            <tr>
+                            <td align="right">1.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="Metadata.main(String[])&#160;:&#160;void" href="javamethod:/org/asr/tools/Metadata.java#18_2">Metadata.main(<wbr>String[])<wbr>&#160;:&#160;void</a> (4)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">2.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="Metadata.printTagValue(JpegImageMetadata,TagInfo)&#160;:&#160;void" href="javamethod:/org/asr/tools/Metadata.java#69_2">Metadata.printTagValue(<wbr>JpegImageMetadata,<wbr>TagInfo)<wbr>&#160;:&#160;void</a> (2)
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+</body>
+</html>
