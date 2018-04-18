@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8">
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Open Drone Data Viewer</title>
+  <script src="./Build/Cesium/Cesium.js"></script>
+        <script src="jquery-3.3.1.min.js"></script>
+  <style>
+      @import url(./Build/Cesium/Widgets/widgets.css);
+      
+body {
+    font-family: "Lato", sans-serif;
+}
+.left-panel {
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+
+.right-panel {
+	position: absolute; right: 0; margin: 0; padding: 0; overflow: hidden;
+	width: 85%;
+	height: 100%;
+	float: left;
+}
+
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 16px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+.active, .collapsible:hover {
+	background-color: #556;
+}
+.collapsible:after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+.active:after{
+	content: "\2212";
+}
+.content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+	float: left;
+}
+</style>
+</head>
+
+
+  
+
+
+<body>
+
+ <div id="menuSelection" class="left-panel">  
+	<p>Aerial Missions:</p>
+	<button class="collapsible"> Uganda</button>
+	<div class="content">
+		<a href="#" id="kyriandongo">Kyriandongo</a><p>
+	  <a href="#" id="w3-bar-item w3-button">Link 2</a><p>
+	  <a href="#" id="w3-bar-item w3-button">Link 3</a><p>
+	</div>
+	<p></p>
+	<button class="collapsible"> Kenya</button>
+	<div class="content">
+		<a href="#" id="w3-bar-item w3-button">Link 1</a><p>
+	  <a href="#" id="w3-bar-item w3-button">Link 2</a><p>
+	  <a href="#" id="w3-bar-item w3-button">Link 3</a><p>
+	</div>
+</div>
+
+<div id="cesiumContainer" class="right-panel"> </div>
+  
+<script>
+        'use strict';
+  Cesium.BingMapsApi.defaultKey = "AnDjLZC2SAT5TUeOjMtX0hd7YPnkzAnPNYwD0Mza2jeSWJdhQnnfrDHed7cpY9H-";
+  
+  var terrain = Cesium.createDefaultTerrainProviderViewModels();
+  var viewer = new Cesium.Viewer('cesiumContainer', {
+   terrainProviderViewModels: terrain,
+   selectedTerrainProviderViewModel: terrain[1],
+   timeline: false,
+   animation : false,
+   vrButton : true,
+   selectionIndicator : true,
+   infoBox : false
+ });
+ 
+ var coll = document.getElementsByClassName("collapsible");
+ var i;
+  for (i = 0; i<coll.length; i++){
+	coll[i].addEventListener("click", function(){
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+			content.style.maxHeight = null;
+		}else{
+			content.style.maxHeight = content.scrollHeight + "px";
+		}
+	});
+  }
+  
+  var options = {
+		camera : viewer.scene.camera,
+		canvas : viewer.scene.canvas
+	};
+  
+  window.onload = function() {
+	var k = document.getElementById("kyriandongo");
+	k.onclick = function(){
+		viewer.camera.flyHome(0);
+		window.alert("I love Wanjiru sooo much");
+        viewer.dataSources.add(Cesium.KmlDataSource.load('Apps/SampleData/kml/gdpPerCapita2008.kmz', options));
+		window.alert("I love Wanjiru sooo much");
+		return false;
+	}
+  }
+</script>
+
+</body>
+</html>
