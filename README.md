@@ -8,3 +8,6 @@ a. raw aerial images
 b. Processed images.
 c. Analytics of the images e.g. vegetation indecies, terrain maps, etc
 d. Flight plans and flight maps
+
+Licensing Terms:
+Work and material herein is released under a GNU General Public License. A copy of license terms can be found here: https://www.gnu.org/licenses/gpl.html

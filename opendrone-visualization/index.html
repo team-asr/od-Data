@@ -127,9 +127,7 @@ body {
 	var k = document.getElementById("kyriandongo");
 	k.onclick = function(){
 		viewer.camera.flyHome(0);
-		window.alert("I love Wanjiru sooo much");
         viewer.dataSources.add(Cesium.KmlDataSource.load('Apps/SampleData/kml/gdpPerCapita2008.kmz', options));
-		window.alert("I love Wanjiru sooo much");
 		return false;
 	}
   }
