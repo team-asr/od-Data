@@ -1,5 +1,11 @@
 package org.asr.tools;
 
+/**
+ * (c) 2018 ASR
+ *  Use is allowed under the GNU GPL v. 3
+ *
+ **/
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
