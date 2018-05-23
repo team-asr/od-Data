@@ -9,5 +9,9 @@ b. Processed images.
 c. Analytics of the images e.g. vegetation indecies, terrain maps, etc
 d. Flight plans and flight maps
 
+Some of the data will become available as they are uploaded by the team.
+
+A link is being created to facilitate updates from the main server directly available to the ASR website, as these are done immediately as missions occur. 
+
 Licensing Terms:
 Work and material herein is released under a GNU General Public License. A copy of license terms can be found here: https://www.gnu.org/licenses/gpl.html
