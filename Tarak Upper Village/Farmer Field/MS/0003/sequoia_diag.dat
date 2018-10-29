@@ -1,0 +1,1312 @@
+---------------------------------------------------- beginning of /proc/kmsg
+====================== ULOGCAT SESSION START  ======================
+K 01-01 00:00:00.000 I KERNEL                                       : Booting Linux on physical CPU 0
+K 01-01 00:00:00.000 I KERNEL                                       : Initializing cgroup subsys cpu
+K 01-01 00:00:00.000 N KERNEL                                       : Linux version 3.4.11-02605-g48f23bb (jenkins@736c70db0446) (gcc version 4.6.3 (Sourcery CodeBench Lite 2012.03-57) ) #1 SMP PREEMPT Thu Mar 2 11:53:39 CET 2017
+K 01-01 00:00:00.000 W KERNEL                                       : CPU: ARMv7 Processor [412fc097] revision 7 (ARMv7), cr=10c53c7d
+K 01-01 00:00:00.000 W KERNEL                                       : CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+K 01-01 00:00:00.000 W KERNEL                                       : Machine: Sicilia board
+K 01-01 00:00:00.000 I KERNEL                                       : P7 per device DMA memory regions:
+K 01-01 00:00:00.000 I KERNEL                                       : 	bff00000:bfffffff: ramoops.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:0797ffff: avicam.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.2
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.3
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.4
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.5
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:071fafff: avi_m2m.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:0bbfffff: hx280-venc.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	bfe00000:bfefffff: ci_hdrc.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	bfd00000:bfdfffff: ci_hdrc.1
+K 01-01 00:00:00.000 W KERNEL                                       : Memory policy: ECC disabled, Data cache writealloc
+K 01-01 00:00:00.000 D KERNEL                                       : On node 0 totalpages: 143104
+K 01-01 00:00:00.000 D KERNEL                                       : free_area_init_node: node 0, pgdat 80910fc0, node_mem_map 80ecb000
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 2048 pages used for memmap
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 0 pages reserved
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 141056 pages, LIFO batch:31
+K 01-01 00:00:00.000 I KERNEL                                       : PERCPU: Embedded 8 pages/cpu @816d9000 s12160 r8192 d12416 u32768
+K 01-01 00:00:00.000 D KERNEL                                       : pcpu-alloc: s12160 r8192 d12416 u32768 alloc=8*4096
+K 01-01 00:00:00.000 D KERNEL                                       : pcpu-alloc: [0] 0 [0] 1 
+K 01-01 00:00:00.000 W KERNEL                                       : Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 141056
+K 01-01 00:00:00.000 N KERNEL                                       : Kernel command line:  boxinit.serialno=P742P44U110000A29140  calib=0x001C0037 console=ttyPA0,115200 loglevel=8 root=/dev/mmcblk0p4 rootfstype=ext4 rootwait parrot_force_usbd boxinit.debuggable=0 boxinit.application=PA_SICILIA boxinit.plateform=PTA_P7 androidboot.bootloader=ecos-bootloader-p7-start-344-g5f4bbf8 
+K 01-01 00:00:00.000 I KERNEL                                       : PID hash table entries: 4096 (order: 2, 16384 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Memory: 559MB = 559MB total
+K 01-01 00:00:00.000 N KERNEL                                       : Memory: 548108k/548108k available, 500468k reserved, 0K highmem
+K 01-01 00:00:00.000 N KERNEL                                       : Virtual kernel memory layout:
+K 01-01 00:00:00.000 N KERNEL                                       :     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :     vmalloc : 0xc0800000 - 0xff000000   (1000 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :     lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :     modules : 0x7f000000 - 0x80000000   (  16 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .text : 0x80008000 - 0x80859d78   (8520 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .init : 0x8085a000 - 0x80892f80   ( 228 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .data : 0x80894000 - 0x809134a0   ( 510 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :        .bss : 0x809134c4 - 0x80ecacc8   (5855 kB)
+K 01-01 00:00:00.000 I KERNEL                                       : Preemptible hierarchical RCU implementation.
+K 01-01 00:00:00.000 I KERNEL                                       : 	Additional per-CPU info printed with stalls.
+K 01-01 00:00:00.000 I KERNEL                                       : NR_IRQS:202
+K 01-01 00:00:00.000 D KERNEL                                       : p7: IRQ setup
+K 01-01 00:00:00.000 D KERNEL                                       : p7: found Parrot7 chip v3 [0x50373032]
+K 01-01 00:00:00.000 D KERNEL                                       : p7: tick setup
+K 01-01 00:00:00.000 I KERNEL                                       : sched_clock: 32 bits at 97MHz, resolution 10ns, wraps every 44050ms
+K 01-01 00:00:00.000 I KERNEL                                       : Console: colour dummy device 80x30
+K 01-01 00:00:00.000 W KERNEL                                       : Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_SUBCLASSES:  8
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCK_DEPTH:          48
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_KEYS:        8191
+K 01-01 00:00:00.000 W KERNEL                                       : ... CLASSHASH_SIZE:          4096
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_ENTRIES:     16384
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_CHAINS:      32768
+K 01-01 00:00:00.000 W KERNEL                                       : ... CHAINHASH_SIZE:          16384
+K 01-01 00:00:00.000 W KERNEL                                       :  memory used by lock dependency info: 3679 kB
+K 01-01 00:00:00.000 W KERNEL                                       :  per task-struct memory footprint: 1152 bytes
+K 01-01 00:00:00.150 I KERNEL                                       : Calibrating delay using timer specific routine.. 1565.87 BogoMIPS (lpj=7829353)
+K 01-01 00:00:00.150 I KERNEL                                       : pid_max: default: 32768 minimum: 301
+K 01-01 00:00:00.152 I KERNEL                                       : Mount-cache hash table entries: 512
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys debug
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys cpuacct
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys freezer
+K 01-01 00:00:00.158 I KERNEL                                       : CPU: Testing write buffer coherency: ok
+K 01-01 00:00:00.160 I KERNEL                                       : CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+K 01-01 00:00:00.160 I KERNEL                                       : hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+K 01-01 00:00:00.161 I KERNEL                                       : Setting up static identity map for 0x805fd250 - 0x805fd2a8
+K 01-01 00:00:00.161 D KERNEL                                       : p7: powering built-in self test off
+K 01-01 00:00:00.161 D KERNEL                                       : p7: setting L2C latencies to tag=00000020 data=00000020.
+K 01-01 00:00:00.161 I KERNEL                                       : L310 cache controller enabled
+K 01-01 00:00:00.161 I KERNEL                                       : l2x0: 16 ways, CACHE_ID 0x410004c5, AUX_CTRL 0x72450801, Cache size: 524288 B
+K 01-01 00:00:00.261 W KERNEL                                       : CPU1: Booted secondary processor
+K 01-01 00:00:00.410 I KERNEL                                       : CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+K 01-01 00:00:00.411 I KERNEL                                       : Brought up 2 CPUs
+K 01-01 00:00:00.411 I KERNEL                                       : SMP: Total of 2 processors activated (3125.92 BogoMIPS).
+K 01-01 00:00:00.413 I KERNEL                                       : devtmpfs: initialized
+K 01-01 00:00:00.444 I KERNEL                                       : pinctrl core: initialized pinctrl subsystem
+K 01-01 00:00:00.446 I KERNEL                                       : dummy: 
+K 01-01 00:00:00.447 I KERNEL                                       : NET: Registered protocol family 16
+K 01-01 00:00:00.450 W KERNEL                                       : i2c-core: driver [p7mu] using legacy suspend method
+K 01-01 00:00:00.450 W KERNEL                                       : i2c-core: driver [p7mu] using legacy resume method
+K 01-01 00:00:00.450 I KERNEL                                       : Ram Oops registered with memory from bff00000-bfffffff
+K 01-01 00:00:00.451 D KERNEL                                       : p7: machine setup
+K 01-01 00:00:00.451 D KERNEL                                       : p7: registering p7-ion.0...
+K 01-01 00:00:00.451 D KERNEL                                       : p7: registering p7-pinctrl.0...
+K 01-01 00:00:00.452 I KERNEL                                       : p7-pinctrl p7-pinctrl.0: loaded
+K 01-01 00:00:00.452 D KERNEL                                       : p7: registering user_gpio.-1...
+K 01-01 00:00:00.452 D KERNEL                                       : p7: registering pl330-dma.0...
+K 01-01 00:00:00.453 I KERNEL                                       : amba pl330-dma.0: mapped microcode memory region [00100000:00101fff]
+K 01-01 00:00:00.453 D KERNEL                                       : p7: registering p7-gpio.0...
+K 01-01 00:00:00.454 I KERNEL                                       : gpiochip_add: registered GPIOs 0 to 219 on device: p7-gpio
+K 01-01 00:00:00.454 I KERNEL                                       : p7-gpio p7-gpio.0: GPIO driver initialized
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 71 (SPI_09b__GPIO_071__PWM_15)
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 72 (SPI_10b__GPIO_072)
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 73 (SPI_11b__GPIO_073__I2C_SECURE_CLKa)
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 74 (SPI_12b__GPIO_074)
+K 01-01 00:00:00.454 I KERNEL                                       : sicilia rev 4
+K 01-01 00:00:00.454 D KERNEL                                       : p7: registering px-uart.0...
+K 01-01 00:00:00.455 D KERNEL                                       : p7: registering px-uart.0 I/O pins...
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_RX I/O pin function
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_RX__GPIO_055 I/O pin settings
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_TX I/O pin function
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_TX__GPIO_056 I/O pin settings
+K 01-01 00:00:00.455 I KERNEL                                       : hw_info : uart 0 rts/cts 0
+K 01-01 00:00:00.456 D KERNEL                                       : p7: registering p7-i2cm.0 I/O pins...
+K 01-01 00:00:00.456 D KERNEL                                       : p7:	install I2C_0_CLK I/O pin function
+K 01-01 00:00:00.456 D KERNEL                                       : p7:	install I2C_0_CLK__GPIO_064__I2C_0_SL_CLK I/O pin settings
+K 01-01 00:00:00.456 D KERNEL                                       : p7:	install I2C_0_DAT I/O pin function
+K 01-01 00:00:00.456 D KERNEL                                       : p7:	install I2C_0_DAT__GPIO_063__I2C_0_SL_DAT I/O pin settings
+K 01-01 00:00:00.456 D KERNEL                                       : p7: registering p7-i2cm.0...
+K 01-01 00:00:00.456 I KERNEL                                       : p7-i2cm p7-i2cm.0: controller probe successfully
+K 01-01 00:00:00.457 I KERNEL                                       : p7-i2cm.0 debugfs interface registered
+K 01-01 00:00:00.457 D KERNEL                                       : p7: registering p7-i2cm.1 I/O pins...
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_CLK I/O pin function
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_CLK__GPIO_062__I2C_1_SL_CLK I/O pin settings
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_DAT I/O pin function
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_DAT__GPIO_061__I2C_1_SL_DAT I/O pin settings
+K 01-01 00:00:00.457 D KERNEL                                       : p7: registering p7-i2cm.1...
+K 01-01 00:00:00.458 I KERNEL                                       : p7-i2cm p7-i2cm.1: controller probe successfully
+K 01-01 00:00:00.458 I KERNEL                                       : p7-i2cm.1 debugfs interface registered
+K 01-01 00:00:00.458 D KERNEL                                       : p7: registering p7-i2cm.2 I/O pins...
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_CLK I/O pin function
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_CLK__GPIO_060__I2C_2_SL_CLK I/O pin settings
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_DAT I/O pin function
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_DAT__GPIO_059__I2C_2_SL_DAT I/O pin settings
+K 01-01 00:00:00.458 D KERNEL                                       : p7: registering p7-i2cm.2...
+K 01-01 00:00:00.458 I KERNEL                                       : p7-i2cm p7-i2cm.2: controller probe successfully
+K 01-01 00:00:00.459 I KERNEL                                       : p7-i2cm.2 debugfs interface registered
+K 01-01 00:00:00.459 D KERNEL                                       : p7: registering p7mu 0-0031...
+K 01-01 00:00:00.459 D KERNEL                                       : p7: registering 0-0031 I/O pins...
+K 01-01 00:00:00.459 D KERNEL                                       : p7:	install REBOOT_P7MU I/O pin function
+K 01-01 00:00:00.460 E KERNEL                                       : p7mu 0-0031: 32 Mhz clock do not match wanted int got ext
+K 01-01 00:00:00.460 I KERNEL                                       : p7mu 0-0031: boot reason: first boot
+K 01-01 00:00:00.461 I KERNEL                                       : p7mu 0-0031: p7mu event before reboot : 
+K 01-01 00:00:00.462 I KERNEL                                       : p7mu 0-0031: p7mu irq 160 182
+K 01-01 00:00:00.463 I KERNEL                                       : gpiochip_add: registered GPIOs 220 to 224 on device: p7mu-gpio
+K 01-01 00:00:00.464 I KERNEL                                       : p7mu 0-0031: attached device v2 to I2C bus p7-i2cm.0
+K 01-01 00:00:00.465 D KERNEL                                       : p7: config pin 49 (GPIO_049)
+K 01-01 00:00:00.465 D KERNEL                                       : p7: config pin 50 (GPIO_050)
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering switch-voltage.3...
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering acs3-sdhci.0...
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering acs3-sdhci.0 I/O pins...
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_CLK I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_CLK__GPIO_021 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_CMD I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_CMD__GPIO_022 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT00 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT00__GPIO_023 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT01 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT01__GPIO_024 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT02 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT02__GPIO_025 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT03 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT03__GPIO_026 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7: registering p7_pwm.0 I/O pins...
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_00 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_00__GPIO_119__PWM_00 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_01 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_01__GPIO_120__PWM_01 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_05 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_06 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_07 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_07__GPIO_126__PWM_07 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_08 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_08__GPIO_127__PWM_08 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_09 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_09__GPIO_128__PWM_09 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7: registering p7_pwm.0...
+K 01-01 00:00:00.467 D KERNEL                                       : p7: registering avi.0...
+K 01-01 00:00:00.468 D KERNEL                                       : p7: registering avicam.0...
+K 01-01 00:00:00.468 D KERNEL                                       : p7: registering avicam.0 I/O pins...
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_CLK I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_HS I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_VS I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA08 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA09 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA10 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA11 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA12 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA13 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA14 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA15 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA16 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA17 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7: registering avicam.2...
+K 01-01 00:00:00.501 D KERNEL                                       : p7: registering avicam.2 I/O pins...
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_CLK I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_HS I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_VS I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA00 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA01 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA02 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA03 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA04 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA05 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA06 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA07 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA08 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA09 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7: registering avicam.3...
+K 01-01 00:00:00.521 D KERNEL                                       : p7: registering avicam.3 I/O pins...
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_CLK I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_HS I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_VS I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA00 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA01 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA02 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA03 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA04 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA05 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA06 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA07 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA08a I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA09a I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7: registering avicam.4...
+K 01-01 00:00:00.541 D KERNEL                                       : p7: registering avicam.4 I/O pins...
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_CLK I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_HS I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_VS I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA00 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA01 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA02 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA03 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA04 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA05 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA06 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA07 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA08 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA09 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering avicam.5...
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering avicam.5 I/O pins...
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_CLK I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_HS I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_VS I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA00 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA01 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA02 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA03 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA04 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA05 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA06 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA07 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA08 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA09 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering ci_hdrc.0...
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering ci_hdrc.0 I/O pins...
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA00 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA00__GPIO_095 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA01 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA01__GPIO_096 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA02 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA02__GPIO_097 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA03 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA03__GPIO_098 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA04 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA04__GPIO_099 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA05 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA05__GPIO_100 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA06 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA06__GPIO_101 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA07 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_DATA07__GPIO_102 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_NXT I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_NXT__GPIO_103 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_STP I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_STP__GPIO_117 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_DIR I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_DIR__GPIO_104 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_CLK I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_0_CLK__GPIO_105 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering ci_hdrc.1...
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering ci_hdrc.1 I/O pins...
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA00 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA00__GPIO_106__I2C_2_CLKa I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA01 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA01__GPIO_107__I2C_2_DATa I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA02 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA02__GPIO_108__I2C_2_CLKb I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA03 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA03__GPIO_109__I2C_2_DATb I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA04 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA04__GPIO_110__I2C_2_CLKc I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA05 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA05__GPIO_111__I2C_2_DATc I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA06 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA06__GPIO_112__I2C_2_CLKd I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA07 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA07__GPIO_113__I2C_2_DATd I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_NXT I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_NXT__GPIO_114__I2C_2_CLKe I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_STP I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_STP__GPIO_116__I2C_2_DATe I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DIR I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DIR__GPIO_115 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_CLK I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_CLK__GPIO_118 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering hx280-venc.0...
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering avi_m2m.0...
+K 01-01 00:00:00.563 D KERNEL                                       : p7: registering avi_m2m.1...
+K 01-01 00:00:00.563 I KERNEL                                       : hw_info : i2c-1 device 0x68 : mpu6050 (IMU)
+K 01-01 00:00:00.564 I KERNEL                                       : Export GPIO-76 as IMU irq
+K 01-01 00:00:00.566 D KERNEL                                       : p7: registering reg-fixed-voltage.0...
+K 01-01 00:00:00.566 D KERNEL                                       : p7: registering switch-voltage.4...
+K 01-01 00:00:00.567 D KERNEL                                       : p7: registering acs3-sdhci.1...
+K 01-01 00:00:00.567 D KERNEL                                       : p7: registering acs3-sdhci.1 I/O pins...
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CLK I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CLK__GPIO_015__UART_5_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CMD I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CMD__GPIO_016__UART_5_RX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT00 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT00__GPIO_017__UART_6_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT01 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT01__GPIO_019__UART_6_RX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT02 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT02__GPIO_018__UART_7_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT03 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT03__GPIO_020__UART_7_RX I/O pin settings
+K 01-01 00:00:00.567 I KERNEL                                       : hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+K 01-01 00:00:00.567 I KERNEL                                       : hw-breakpoint: maximum watchpoint size is 4 bytes.
+K 01-01 00:00:00.597 I KERNEL                                       : bio: create slab <bio-0> at 0
+K 01-01 00:00:00.599 W KERNEL                                       : i2c-core: driver [pca953x] using legacy suspend method
+K 01-01 00:00:00.599 W KERNEL                                       : i2c-core: driver [pca953x] using legacy resume method
+K 01-01 00:00:00.599 I KERNEL                                       : vwl18xx: 1800 mV 
+K 01-01 00:00:00.601 N KERNEL                                       : SCSI subsystem initialized
+K 01-01 00:00:00.602 I KERNEL                                       : usbcore: registered new interface driver usbfs
+K 01-01 00:00:00.602 I KERNEL                                       : usbcore: registered new interface driver hub
+K 01-01 00:00:00.603 I KERNEL                                       : usbcore: registered new device driver usb
+K 01-01 00:00:00.603 I KERNEL                                       : Linux media interface: v0.10
+K 01-01 00:00:00.603 I KERNEL                                       : Linux video capture interface: v2.00
+K 01-01 00:00:00.604 I KERNEL                                       : pps_core: LinuxPPS API ver. 1 registered
+K 01-01 00:00:00.604 I KERNEL                                       : pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+K 01-01 00:00:00.604 I KERNEL                                       : PTP clock support registered
+K 01-01 00:00:00.605 I KERNEL                                       : Advanced Linux Sound Architecture Driver Version 1.0.25.
+K 01-01 00:00:00.605 W KERNEL                                       : i2c-core: driver [smsc82514] using legacy suspend method
+K 01-01 00:00:00.605 W KERNEL                                       : i2c-core: driver [smsc82514] using legacy resume method
+K 01-01 00:00:00.605 W KERNEL                                       : i2c-core: driver [lvds] using legacy suspend method
+K 01-01 00:00:00.605 W KERNEL                                       : i2c-core: driver [lvds] using legacy resume method
+K 01-01 00:00:00.605 I KERNEL                                       : sdhci0_bus_vdd: 3300 mV 
+K 01-01 00:00:00.606 I KERNEL                                       : sdhci1_bus_vdd: 3300 mV 
+K 01-01 00:00:00.606 E KERNEL                                       : switch-voltage switch-voltage.4: Failed to set supply vqmmc
+K 01-01 00:00:00.607 E KERNEL                                       : switch-voltage switch-voltage.4: Failed to register regulator: -16
+K 01-01 00:00:00.607 W KERNEL                                       : switch-voltage: probe of switch-voltage.4 failed with error -16
+K 01-01 00:00:00.609 I KERNEL                                       : Switching to clocksource timer2
+K 01-01 00:00:00.798 I KERNEL                                       : NET: Registered protocol family 2
+K 01-01 00:00:00.799 I KERNEL                                       : IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+K 01-01 00:00:00.801 I KERNEL                                       : TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+K 01-01 00:00:00.804 I KERNEL                                       : TCP bind hash table entries: 65536 (order: 9, 2621440 bytes)
+K 01-01 00:00:00.819 I KERNEL                                       : TCP: Hash tables configured (established 131072 bind 65536)
+K 01-01 00:00:00.819 I KERNEL                                       : TCP: reno registered
+K 01-01 00:00:00.819 I KERNEL                                       : UDP hash table entries: 512 (order: 3, 49152 bytes)
+K 01-01 00:00:00.820 I KERNEL                                       : UDP-Lite hash table entries: 512 (order: 3, 49152 bytes)
+K 01-01 00:00:00.821 I KERNEL                                       : NET: Registered protocol family 1
+K 01-01 00:00:00.823 I KERNEL                                       : RPC: Registered named UNIX socket transport module.
+K 01-01 00:00:00.823 I KERNEL                                       : RPC: Registered udp transport module.
+K 01-01 00:00:00.823 I KERNEL                                       : RPC: Registered tcp transport module.
+K 01-01 00:00:00.823 I KERNEL                                       : RPC: Registered tcp NFSv4.1 backchannel transport module.
+K 01-01 00:00:00.833 I KERNEL                                       : squashfs: version 4.0 (2009/01/31) Phillip Lougher
+K 01-01 00:00:00.833 N KERNEL                                       : NFS: Registering the id_resolver key type
+K 01-01 00:00:00.835 I KERNEL                                       : NTFS driver 2.1.30 [Flags: R/O].
+K 01-01 00:00:00.835 I KERNEL                                       : fuse init (API version 7.18)
+K 01-01 00:00:00.836 I KERNEL                                       : msgmni has been set to 1070
+K 01-01 00:00:00.840 I KERNEL                                       : Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+K 01-01 00:00:00.840 I KERNEL                                       : io scheduler noop registered
+K 01-01 00:00:00.840 I KERNEL                                       : io scheduler deadline registered (default)
+K 01-01 00:00:00.840 I KERNEL                                       : start plist test
+K 01-01 00:00:00.844 I KERNEL                                       : end plist test
+K 01-01 00:00:00.846 I KERNEL                                       : dma-pl330 pl330-dma.0: Loaded driver for PL330 DMAC-267056
+K 01-01 00:00:00.846 I KERNEL                                       : dma-pl330 pl330-dma.0: 	DBUFF-64x8bytes Num_Chans-6 Num_Peri-7 Num_Events-6
+K 01-01 00:00:00.860 I KERNEL                                       : loop: module loaded
+K 01-01 00:00:00.865 I KERNEL                                       : tun: Universal TUN/TAP device driver, 1.6
+K 01-01 00:00:00.865 I KERNEL                                       : tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+K 01-01 00:00:00.866 I KERNEL                                       : PPP generic driver version 2.4.2
+K 01-01 00:00:00.867 I KERNEL                                       : PPP BSD Compression module registered
+K 01-01 00:00:00.867 I KERNEL                                       : PPP Deflate Compression module registered
+K 01-01 00:00:00.869 I KERNEL                                       : PPP MPPE Compression module registered
+K 01-01 00:00:00.869 I KERNEL                                       : NET: Registered protocol family 24
+K 01-01 00:00:00.870 I KERNEL                                       : Initializing USB Mass Storage driver...
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver usb-storage
+K 01-01 00:00:00.870 I KERNEL                                       : USB Mass Storage support registered.
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver libusual
+K 01-01 00:00:00.871 I KERNEL                                       : usbcore: registered new interface driver usbserial
+K 01-01 00:00:00.871 I KERNEL                                       : usbserial: USB Serial Driver core
+K 01-01 00:00:00.871 I KERNEL                                       : usbcore: registered new interface driver ftdi_sio
+K 01-01 00:00:00.871 I KERNEL                                       : USB Serial support registered for FTDI USB Serial Device
+K 01-01 00:00:00.871 I KERNEL                                       : ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
+K 01-01 00:00:00.874 D KERNEL                                       : ci_hdrc ci_hdrc.0: disabling VbusValid interrupt (0)
+K 01-01 00:00:00.875 D KERNEL                                       : ci_hdrc ci_hdrc.1: disabling VbusValid interrupt (0)
+K 01-01 00:00:00.875 I KERNEL                                       : ci_hdrc ci_hdrc.1: ChipIdea HDRC EHCI
+K 01-01 00:00:00.876 I KERNEL                                       : ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 1
+K 01-01 00:00:00.919 I KERNEL                                       : ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+K 01-01 00:00:00.920 I KERNEL                                       : usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+K 01-01 00:00:00.920 I KERNEL                                       : usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+K 01-01 00:00:00.920 I KERNEL                                       : usb usb1: Product: ChipIdea HDRC EHCI
+K 01-01 00:00:00.920 I KERNEL                                       : usb usb1: Manufacturer: Linux 3.4.11-02605-g48f23bb ehci_hcd
+K 01-01 00:00:00.920 I KERNEL                                       : usb usb1: SerialNumber: ci_hdrc.1
+K 01-01 00:00:00.922 I KERNEL                                       : hub 1-0:1.0: USB hub found
+K 01-01 00:00:00.922 I KERNEL                                       : hub 1-0:1.0: 1 port detected
+K 01-01 00:00:00.924 I KERNEL                                       : file system registered
+K 01-01 00:00:00.928 I KERNEL                                       :  gadget: Mass Storage Function, version: 2009/09/11
+K 01-01 00:00:00.928 I KERNEL                                       :  gadget: Number of LUNs=1
+K 01-01 00:00:00.928 I KERNEL                                       :  lun0: LUN: removable file: (no medium)
+K 01-01 00:00:00.929 W KERNEL                                       : Gadget Android: controller 'ci_pdata' not recognized
+K 01-01 00:00:00.929 I KERNEL                                       :  gadget: android_usb ready
+K 01-01 00:00:00.930 I KERNEL                                       : i2c /dev entries driver
+K 01-01 00:00:00.932 W KERNEL                                       : i2c-core: driver [tw8834] using legacy suspend method
+K 01-01 00:00:00.932 W KERNEL                                       : i2c-core: driver [tw8834] using legacy resume method
+K 01-01 00:00:00.932 W KERNEL                                       : i2c-core: driver [tw9990] using legacy suspend method
+K 01-01 00:00:00.932 W KERNEL                                       : i2c-core: driver [tw9990] using legacy resume method
+K 01-01 00:00:00.934 I KERNEL                                       : device-mapper: uevent: version 1.0.3
+K 01-01 00:00:00.935 I KERNEL                                       : device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+K 01-01 00:00:00.935 I KERNEL                                       : sdhci: Secure Digital Host Controller Interface driver
+K 01-01 00:00:00.935 I KERNEL                                       : sdhci: Copyright(c) Pierre Ossman
+K 01-01 00:00:00.935 D KERNEL                                       : Registered led device: sicilia:green
+K 01-01 00:00:00.936 D KERNEL                                       : Registered led device: sicilia:red
+K 01-01 00:00:00.936 D KERNEL                                       : Registered led device: sicilia:blue
+K 01-01 00:00:00.937 I KERNEL                                       : usbcore: registered new interface driver usbhid
+K 01-01 00:00:00.937 I KERNEL                                       : usbhid: USB HID core driver
+K 01-01 00:00:00.939 I KERNEL                                       : ashmem: initialized
+K 01-01 00:00:00.939 I KERNEL                                       : logger: created 256K log 'log_main'
+K 01-01 00:00:00.940 I KERNEL                                       : logger: created 256K log 'log_events'
+K 01-01 00:00:00.940 I KERNEL                                       : logger: created 256K log 'log_radio'
+K 01-01 00:00:00.940 I KERNEL                                       : logger: created 256K log 'log_system'
+K 01-01 00:00:00.941 I KERNEL                                       : logger: created 64K log 'log_ckcm'
+K 01-01 00:00:00.941 I KERNEL                                       : ulogger: created 256K log 'ulog_main'
+K 01-01 00:00:00.944 I KERNEL                                       : Serial: Parrot5/5+ UART driver $Revision: 1.19 $
+K 01-01 00:00:00.944 I KERNEL                                       : px-uart.0: ttyPA0 at MMIO 0x2100000 (irq = 91) is a PARROT5
+K 01-01 00:00:03.185 I KERNEL                                       : console [ttyPA0] enabled
+K 01-01 00:00:03.189 I KERNEL                                       : avi avi.0: Found AVI revision 3
+K 01-01 00:00:03.200 I KERNEL                                       : avi avi.0: AVI core driver initialized
+K 01-01 00:00:03.207 I KERNEL                                       : AVI DebugFS registered
+K 01-01 00:00:03.217 I KERNEL                                       : Powering on maincam
+K 01-01 00:00:03.280 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 01-01 00:00:03.287 I KERNEL                                       : Powering off maincam
+K 01-01 00:00:03.290 I KERNEL                                       : tc358746a 2-000e: Found tc358746a chip
+K 01-01 00:00:03.295 I KERNEL                                       : tc358746a 2-000e: TC358746A MIPI bridge successfully probed
+K 01-01 00:00:03.303 I KERNEL                                       : Powering on maincam
+K 01-01 00:00:03.360 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 01-01 00:00:03.367 I KERNEL                                       : ov16825 2-0036: Found OV16825 chip
+K 01-01 00:00:03.372 I KERNEL                                       : Powering off maincam
+K 01-01 00:00:03.375 I KERNEL                                       : ov16825 2-0036: OV16825 sensor succesfully probed
+K 01-01 00:00:03.380 I KERNEL                                       : avicam avicam.0: video device successfuly registered as video0
+K 01-01 00:00:03.409 I KERNEL                                       : usb 1-1: new high-speed USB device number 2 using ci_hdrc
+K 01-01 00:00:03.410 I KERNEL                                       : mt9m021 2-0012: Found mt9m021 chip
+K 01-01 00:00:03.410 I KERNEL                                       : avicam avicam.2: video device successfuly registered as video1
+K 01-01 00:00:03.430 I KERNEL                                       : mt9m021 2-0013: Found mt9m021 chip
+K 01-01 00:00:03.435 I KERNEL                                       : avicam avicam.3: video device successfuly registered as video2
+K 01-01 00:00:03.460 I KERNEL                                       : mt9m021 2-0014: Found mt9m021 chip
+K 01-01 00:00:03.465 I KERNEL                                       : avicam avicam.4: video device successfuly registered as video3
+K 01-01 00:00:03.490 I KERNEL                                       : mt9m021 2-0015: Found mt9m021 chip
+K 01-01 00:00:03.495 I KERNEL                                       : avicam avicam.5: video device successfuly registered as video4
+K 01-01 00:00:03.502 I KERNEL                                       : registering avicam V4L2 subdevice nodes.
+K 01-01 00:00:03.509 I KERNEL                                       : avi_r2r Initialized
+K 01-01 00:00:03.516 I KERNEL                                       : avi avi.0: stats video device successfuly registered as video6
+K 01-01 00:00:03.522 I KERNEL                                       : avi_m2m avi_m2m.0: video device successfuly registered as video5
+K 01-01 00:00:03.532 I KERNEL                                       : avi_m2m avi_m2m.1: video device successfuly registered as video7
+K 01-01 00:00:03.540 I KERNEL                                       : avi_v4l2_dev avi: successfully probed
+K 01-01 00:00:03.545 I KERNEL                                       : hx280-venc hx280-venc.0: found hx280 video encoder (0x48313610).
+K 01-01 00:00:03.554 W KERNEL                                       : Mali: Mali device driver loaded
+K 01-01 00:00:03.559 I KERNEL                                       : mmc0: no vqmmc regulator found
+K 01-01 00:00:03.563 I KERNEL                                       : mmc0: no vmmc regulator found
+K 01-01 00:00:03.568 D KERNEL                                       : Registered led device: mmc0::
+K 01-01 00:00:03.573 I KERNEL                                       : usb 1-1: New USB device found, idVendor=0424, idProduct=2422
+K 01-01 00:00:03.579 I KERNEL                                       : usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+K 01-01 00:00:03.588 I KERNEL                                       : hub 1-1:1.0: USB hub found
+K 01-01 00:00:03.592 I KERNEL                                       : hub 1-1:1.0: 2 ports detected
+K 01-01 00:00:03.649 I KERNEL                                       : mmc0: SDHCI controller on acs3-sdhci [acs3-sdhci.0] using ADMA
+K 01-01 00:00:03.658 D KERNEL                                       : Registered led device: mmc1::
+K 01-01 00:00:03.819 I KERNEL                                       : mmc1: SDHCI controller on acs3-sdhci [acs3-sdhci.1] using ADMA
+K 01-01 00:00:03.829 I KERNEL                                       : p7mu-rtc p7mu-rtc: rtc core: registered p7mu-rtc as rtc0
+K 01-01 00:00:03.837 W KERNEL                                       : p7mu-adc p7mu-adc: No ADC channel pdata, disabling SPI
+K 01-01 00:00:03.844 I KERNEL                                       : p7mu-adc p7mu-adc: P7MU ADC - ready
+K 01-01 00:00:03.852 I KERNEL                                       : p7-temperature p7-temperature: temperature sensor and ADC registered.
+K 01-01 00:00:03.863 I KERNEL                                       : fc7100-temperature fc7100-temperature: fc7100-temperature temperature sensor and ADC registered.
+K 01-01 00:00:03.873 I KERNEL                                       : usb 1-1.1: new high-speed USB device number 3 using ci_hdrc
+K 01-01 00:00:03.881 I KERNEL                                       : u32 classifier
+K 01-01 00:00:03.883 I KERNEL                                       :     Actions configured
+K 01-01 00:00:03.887 I KERNEL                                       : Netfilter messages via NETLINK v0.30.
+K 01-01 00:00:03.892 I KERNEL                                       : nf_conntrack version 0.5.0 (8564 buckets, 34256 max)
+K 01-01 00:00:03.899 I KERNEL                                       : mmc0: new high speed DDR MMC card at address 0001
+K 01-01 00:00:03.900 I KERNEL                                       : ctnetlink v0.93: registering with nfnetlink.
+K 01-01 00:00:03.903 I KERNEL                                       : NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+K 01-01 00:00:03.903 I KERNEL                                       : NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+K 01-01 00:00:03.924 I KERNEL                                       : xt_time: kernel timezone is -0000
+K 01-01 00:00:03.928 I KERNEL                                       : mmcblk0: mmc0:0001 064G70 58.2 GiB 
+K 01-01 00:00:03.930 I KERNEL                                       : ip_tables: (C) 2000-2006 Netfilter Core Team
+K 01-01 00:00:03.930 I KERNEL                                       : arp_tables: (C) 2002 David S. Miller
+K 01-01 00:00:03.931 I KERNEL                                       : TCP: cubic registered
+K 01-01 00:00:03.931 I KERNEL                                       : Initializing XFRM netlink socket
+K 01-01 00:00:03.950 I KERNEL                                       : NET: Registered protocol family 10
+K 01-01 00:00:03.951 I KERNEL                                       : mmcblk0boot0: mmc0:0001 064G70 partition 1 4.00 MiB
+K 01-01 00:00:03.952 I KERNEL                                       : mmcblk0boot1: mmc0:0001 064G70 partition 2 4.00 MiB
+K 01-01 00:00:03.972 I KERNEL                                       : Mobile IPv6
+K 01-01 00:00:03.974 I KERNEL                                       : ip6_tables: (C) 2000-2006 Netfilter Core Team
+K 01-01 00:00:03.980 I KERNEL                                       : IPv6 over IPv4 tunneling driver
+K 01-01 00:00:03.986 I KERNEL                                       :  mmcblk0: p1 p2 p3 p4 p5 p6 p7
+K 01-01 00:00:03.986 I KERNEL                                       : NET: Registered protocol family 17
+K 01-01 00:00:03.986 I KERNEL                                       : NET: Registered protocol family 15
+K 01-01 00:00:03.987 I KERNEL                                       : 8021q: 802.1Q VLAN Support v1.8
+K 01-01 00:00:03.987 N KERNEL                                       : Registering the dns_resolver key type
+K 01-01 00:00:04.007 I KERNEL                                       : VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 2
+K 01-01 00:00:04.015 I KERNEL                                       : ThumbEE CPU extension supported.
+K 01-01 00:00:04.020 I KERNEL                                       :  mmcblk0boot1: unknown partition table
+K 01-01 00:00:04.027 W KERNEL                                       : i2c-core: driver [siihdmi] using legacy suspend method
+K 01-01 00:00:04.033 W KERNEL                                       : i2c-core: driver [siihdmi] using legacy resume method
+K 01-01 00:00:04.040 I KERNEL                                       :  mmcblk0boot0: unknown partition table
+K 01-01 00:00:04.044 I KERNEL                                       : usb 1-1.1: New USB device found, idVendor=058f, idProduct=6254
+K 01-01 00:00:05.504 I KERNEL                                       : p7mu-rtc p7mu-rtc: setting system clock to 1970-01-01 00:00:05 UTC (5)
+K 01-01 00:00:05.505 I KERNEL                                       : usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+K 01-01 00:00:05.520 I KERNEL                                       : hub 1-1.1:1.0: USB hub found
+K 01-01 00:00:05.524 I KERNEL                                       : hub 1-1.1:1.0: 4 ports detected
+K 01-01 00:00:05.533 I KERNEL                                       : ALSA device list:
+K 01-01 00:00:05.536 I KERNEL                                       :   No soundcards found.
+K 01-01 00:00:05.553 I KERNEL                                       : EXT4-fs (mmcblk0p4): mounted filesystem with ordered data mode. Opts: (null)
+K 01-01 00:00:05.561 I KERNEL                                       : VFS: Mounted root (ext4 filesystem) readonly on device 179:4.
+K 01-01 00:00:05.568 W KERNEL                                       : mmc1: card claims to support voltages below the defined range. These will be ignored.
+K 01-01 00:00:05.569 I KERNEL                                       : Freeing init memory: 224K
+K 01-01 00:00:05.569 I KERNEL                                       : Write protecting the kernel text section 80008000 - 80825000
+K 01-01 00:00:05.638 W KERNEL                                       : mmc1: queuing unknown CIS tuple 0x91 (3 bytes)
+K 01-01 00:00:05.647 I KERNEL                                       : usb 1-1.2: new full-speed USB device number 4 using ci_hdrc
+K 01-01 00:00:05.656 I KERNEL                                       : mmc1: new high speed SDIO card at address 0001
+K 01-01 00:00:05.763 I KERNEL                                       : usb 1-1.2: New USB device found, idVendor=0403, idProduct=6001
+K 01-01 00:00:05.763 I KERNEL                                       : usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+K 01-01 00:00:05.763 I KERNEL                                       : usb 1-1.2: Product: FT232R USB UART
+K 01-01 00:00:05.763 I KERNEL                                       : usb 1-1.2: Manufacturer: FTDI
+K 01-01 00:00:05.763 I KERNEL                                       : usb 1-1.2: SerialNumber: AK0539S1
+K 01-01 00:00:05.766 I KERNEL                                       : ulogger: created 128K log 'ulog_kmsgd'
+K 01-01 00:00:05.768 I KERNEL                                       : ftdi_sio 1-1.2:1.0: FTDI USB Serial Device converter detected
+K 01-01 00:00:05.769 I KERNEL                                       : usb 1-1.2: Detected FT232RL
+K 01-01 00:00:05.769 I KERNEL                                       : usb 1-1.2: Number of endpoints 2
+K 01-01 00:00:05.769 I KERNEL                                       : usb 1-1.2: Endpoint 1 MaxPacketSize 64
+K 01-01 00:00:05.769 I KERNEL                                       : usb 1-1.2: Endpoint 2 MaxPacketSize 64
+K 01-01 00:00:05.769 I KERNEL                                       : usb 1-1.2: Setting MaxPacketSize 64
+K 01-01 00:00:05.770 I KERNEL                                       : usb 1-1.2: FTDI USB Serial Device converter now attached to ttyUSB0
+K 01-01 00:00:05.829 I KERNEL                                       : EXT4-fs (mmcblk0p6): barriers disabled
+K 01-01 00:00:05.845 I KERNEL                                       : usb 1-1.1.1: new high-speed USB device number 5 using ci_hdrc
+K 01-01 00:00:05.923 I KERNEL                                       : EXT4-fs (mmcblk0p6): recovery complete
+K 01-01 00:00:05.924 I KERNEL                                       : EXT4-fs (mmcblk0p6): mounted filesystem with writeback data mode. Opts: discard,data=writeback,nobarrier
+K 01-01 00:00:05.928 I KERNEL                                       : EXT4-fs (mmcblk0p7): barriers disabled
+K 01-01 00:00:05.939 I KERNEL                                       : EXT4-fs (mmcblk0p7): recovery complete
+K 01-01 00:00:05.939 I KERNEL                                       : EXT4-fs (mmcblk0p7): mounted filesystem with writeback data mode. Opts: discard,data=writeback,nobarrier
+K 01-01 00:00:05.942 I KERNEL                                       : EXT4-fs (mmcblk0p5): barriers disabled
+K 01-01 00:00:05.944 I KERNEL                                       : EXT4-fs (mmcblk0p5): mounted filesystem with writeback data mode. Opts: data=writeback,nobarrier
+K 01-01 00:00:05.959 I KERNEL                                       : usb 1-1.1.1: New USB device found, idVendor=058f, idProduct=6366
+K 01-01 00:00:05.959 I KERNEL                                       : usb 1-1.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+K 01-01 00:00:05.959 I KERNEL                                       : usb 1-1.1.1: Product: Flash Card Reader/Writer
+K 01-01 00:00:05.959 I KERNEL                                       : usb 1-1.1.1: Manufacturer: Generic
+K 01-01 00:00:05.959 I KERNEL                                       : usb 1-1.1.1: SerialNumber: 058F63666485
+K 01-01 00:00:05.963 I KERNEL                                       : scsi0 : usb-storage 1-1.1.1:1.0
+K 01-01 00:00:06.046 I KERNEL                                       : usb 1-1.1.2: new high-speed USB device number 6 using ci_hdrc
+K 01-01 00:00:06.157 I KERNEL                                       : usb 1-1.1.2: New USB device found, idVendor=19cf, idProduct=5100
+K 01-01 00:00:06.157 I KERNEL                                       : usb 1-1.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+K 01-01 00:00:06.157 I KERNEL                                       : usb 1-1.1.2: Product: Sunshine
+K 01-01 00:00:06.157 I KERNEL                                       : usb 1-1.1.2: Manufacturer: Parrot SA
+K 01-01 00:00:06.157 I KERNEL                                       : usb 1-1.1.2: SerialNumber: PI040379AA6H001230
+K 01-01 00:00:06.299 I KERNEL                                       : udev[85]: starting version 164
+K 01-01 00:00:06.633 I KERNEL                                       : EXT4-fs (mmcblk0p5): re-mounted. Opts: (null)
+K 01-01 00:00:06.710 I KERNEL                                       : Loading modules backported from Linux version R8.5-0-gcb51164
+K 01-01 00:00:06.710 I KERNEL                                       : Backport generated by backports.git R8.4-0-g0d46f43
+K 01-01 00:00:06.960 N KERNEL                                       : scsi 0:0:0:0: Direct-Access     Multiple Card  Reader     1.00 PQ: 0 ANSI: 4
+K 01-01 00:00:06.989 W KERNEL                                       : tsl2591: module is from the staging directory, the quality is unknown, you have been warned.
+K 01-01 00:00:07.194 I KERNEL                                       : EXT4-fs (mmcblk0p4): re-mounted. Opts: (null)
+K 01-01 00:00:07.252 I KERNEL                                       : cfg80211: Calling CRDA to update world regulatory domain
+K 01-01 00:00:07.576 N KERNEL                                       : sd 0:0:0:0: [sda] 63272960 512-byte logical blocks: (32.3 GB/30.1 GiB)
+K 01-01 00:00:07.579 N KERNEL                                       : sd 0:0:0:0: [sda] Write Protect is off
+K 01-01 00:00:07.579 D KERNEL                                       : sd 0:0:0:0: [sda] Mode Sense: 23 00 00 00
+K 01-01 00:00:07.583 N KERNEL                                       : sd 0:0:0:0: [sda] Write cache: disabled, read cache: disabled, doesn't support DPO or FUA
+K 01-01 00:00:07.602 I KERNEL                                       :  sda: sda1
+K 01-01 00:00:07.625 N KERNEL                                       : sd 0:0:0:0: [sda] Attached SCSI removable disk
+K 01-01 00:00:08.115 I KERNEL                                       : EXT4-fs (mmcblk0p4): re-mounted. Opts: (null)
+K 01-01 00:00:08.326 I KERNEL                                       : sicilia-irradiance 1-1.1.2:1.0: Request firware "dvb-usb-dib0700-1.23.fw"
+K 01-01 00:00:09.119 I KERNEL                                       : wlcore: wl18xx HW: 183x or 180x, PG 2.2 (ROM 0x11)
+K 01-01 00:00:09.171 I KERNEL                                       : wlcore: loaded
+K 01-01 00:00:09.171 I KERNEL                                       : wlcore: driver version: 
+K 01-01 00:00:09.171 I KERNEL                                       : wlcore: compilation time: Thu Mar  2 11:56:32 2017
+K 01-01 00:00:09.174 E KERNEL                                       : usb 1-1.1.2: Firware started successfully
+K 01-01 00:00:09.375 I KERNEL                                       : sicilia-irradiance 1-1.1.2:1.0: Firmware downloaded
+K 01-01 00:00:09.377 I KERNEL                                       : sicilia-irradiance 1-1.1.2:1.0: Firmware version: 66, 17, 0x10201, 1
+K 01-01 00:00:09.379 I KERNEL                                       : sicilia-irradiance 1-1.1.2:1.0: TTY registration succeed
+K 01-01 00:00:09.381 I KERNEL                                       : usb 1-1.1.2: adapter "dib0700_mfd.0.0" (master sda:0,scl:0)
+K 01-01 00:00:09.400 I KERNEL                                       : usb 1-1.1.2: adapter "dib0700_mfd.2.5" (bit banging sda:2,scl:5)
+K 01-01 00:00:09.408 I KERNEL                                       : usb 1-1.1.2: adapter "dib0700_mfd.3.5" (bit banging sda:3,scl:5)
+K 01-01 00:00:09.410 I KERNEL                                       : usb 1-1.1.2: adapter "dib0700_mfd.7.5" (bit banging sda:7,scl:5)
+K 01-01 00:00:09.415 I KERNEL                                       : gpiochip_add: registered GPIOs 264 to 274 on device: dib0700_mfd
+K 01-01 00:00:09.415 I KERNEL                                       : sicilia-irradiance 1-1.1.2:1.0: GPIO chip registered
+K 01-01 00:00:09.424 D KERNEL                                       : Registered led device: ncp5623c:irradiance:blue
+K 01-01 00:00:09.425 D KERNEL                                       : Registered led device: ncp5623c:irradiance:green
+K 01-01 00:00:09.426 D KERNEL                                       : Registered led device: ncp5623c:irradiance:red
+K 01-01 00:00:09.512 I KERNEL                                       : usbcore: registered new interface driver sicilia-irradiance
+K 01-01 00:00:09.538 E KERNEL                                       : android_usb: already disabled
+K 01-01 00:00:10.399 I KERNEL                                       : wlcore: PHY firmware version: Rev 8.2.0.0.224
+K 01-01 00:00:10.569 I KERNEL                                       : wlcore: firmware booted (Rev 8.9.0.0.31)
+K 01-01 00:00:10.570 E KERNEL                                       : android_usb: already disabled
+K 01-01 00:00:10.572 I KERNEL                                       : mtp_bind_config
+K 01-01 00:00:10.574 I KERNEL                                       : rndis_function_bind_config MAC: 00:00:00:00:00:00
+K 01-01 00:00:10.574 W KERNEL                                       :  gadget: using random self ethernet address
+K 01-01 00:00:10.574 W KERNEL                                       :  gadget: using random host ethernet address
+K 01-01 00:00:10.662 I KERNEL                                       : ADDRCONF(NETDEV_UP): wlan0: link is not ready
+K 01-01 00:00:10.673 I KERNEL                                       : rndis0: MAC 06:87:f6:8d:0f:fe
+K 01-01 00:00:10.673 I KERNEL                                       : rndis0: HOST MAC c6:91:e9:b0:2c:1e
+K 01-01 00:00:11.303 I KERNEL                                       : ADDRCONF(NETDEV_UP): rndis0: link is not ready
+---------------------------------------------------- beginning of /dev/ulog_main
+U 01-01 00:15:58.195 N boxinit     (init-1)                         : process 'ulog_clear', pid 371 exited
+U 01-01 00:15:58.313 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:15:58.512 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:15:58.599 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:15:58.603 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:15:58.603 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:15:58.604 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:15:58.604 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:15:58.604 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:15:58.640 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:15:58.713 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:15:58.938 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:15:59.517 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:00.518 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:02.605 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:02.607 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:02.608 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:02.609 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:02.609 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:02.609 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:02.640 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:02.925 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:03.326 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:05.731 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:05.932 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:06.607 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:06.608 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:06.611 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:06.611 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:06.650 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:06.650 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:06.650 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:07.135 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:07.311 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:07.713 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:08.112 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:08.314 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:08.514 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:08.939 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:09.316 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:09.516 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:10.614 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:10.615 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:10.617 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:10.618 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:10.650 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:10.651 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:10.651 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:10.944 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:11.922 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:12.323 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:13.126 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:13.727 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:14.128 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:14.616 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:14.618 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:14.619 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:14.619 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:14.619 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:14.620 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:14.660 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:14.730 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:15.331 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:18.621 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:18.622 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:18.624 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:18.624 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:18.660 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:18.660 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:18.660 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:18.694 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_START_SENSORS
+U 01-01 00:16:18.701 N boxinit     (init-1)                         : starting 'ulog_session'
+U 01-01 00:16:18.721 I PLRM_imaging(palermo-149/MainLoop-224)       : Set media path to '/tmp/mounts/usb/sda1/DCIM/0003'
+U 01-01 00:16:18.722 N PLRM_imaging(palermo-149/MainLoop-224)       : ---------------------------------------------
+U 01-01 00:16:18.722 N PLRM_imaging(palermo-149/MainLoop-224)       : FW version = v1.3.2
+U 01-01 00:16:18.722 N PLRM_imaging(palermo-149/MainLoop-224)       : Camera S/N = PI040378AA6H000971
+U 01-01 00:16:18.722 N PLRM_imaging(palermo-149/MainLoop-224)       : Sunshine S/N = PI040379AA6H001230
+U 01-01 00:16:18.722 N PLRM_imaging(palermo-149/MainLoop-224)       : FlightUUID = 5DB6978694AA506A794BB11203A36C60
+U 01-01 00:16:18.722 N PLRM_imaging(palermo-149/MainLoop-224)       : ---------------------------------------------
+U 01-01 00:16:18.723 I sensors     (sensors_main-152/server_pomp-170): [SERVER_POMP] server_event_cb : event=2(MSG) conn=0x76800468 msg=0x76801638
+U 01-01 00:16:18.723 I sensors     (sensors_main-152/server_pomp-170): [SERVER_POMP] HEATING_IMU_START (old f_heat_off: TRUE)
+U 01-01 00:16:18.723 I tlmblackbox (telemetryd-157)                 : setEnabled 0
+U 01-01 00:16:18.723 I sensors     (sensors_ir-328/server_pomp-332) : [SERVER_POMP] server_event_cb : event=2(MSG) conn=0xe00c48 msg=0xe01e18
+U 01-01 00:16:18.723 I sensors     (sensors_ir-328/server_pomp-332) : [SERVER_POMP] HEATING_IMU_START (old f_heat_off: TRUE)
+U 01-01 00:16:18.725 I LIBIMAG_FSM (palermo-149/Img_FSM-329)        : State Changed: Ready(2) -> Timelapse_Starting(8)
+U 01-01 00:16:18.751 I PLRM_server (palermo-149/MainLoop-224)       : event_imu_heating_status: id=0 status=1
+U 01-01 00:16:18.751 I pomp_comm_c (mtp-server-275/client_pomp-348) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:16:18.752 I pomp_comm_c (civetitf-153/client_pomp-218)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:16:18.753 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:18.775 I PLRM_server (palermo-149/MainLoop-224)       : event_imu_heating_status: id=1 status=1
+U 01-01 00:16:18.776 I pomp_comm_c (mtp-server-275/client_pomp-348) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:16:18.777 I pomp_comm_c (civetitf-153/client_pomp-218)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:16:18.781 I tlmblackbox (telemetryd-157)                 : Closing file '/data/blackbox/sequoia_param.dat'
+U 01-01 00:16:18.793 I tlmblackbox (telemetryd-157)                 : setLogDir '/tmp/mounts/usb/sda1/DCIM/0003'
+U 01-01 00:16:18.802 I tlmblackbox (telemetryd-157)                 : setEnabled 1
+U 01-01 00:16:18.802 I tlmblackbox (telemetryd-157)                 : rotate logs: '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat.3' -> '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat.4'
+U 01-01 00:16:18.803 I tlmblackbox (telemetryd-157)                 : rotate logs: '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat.2' -> '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat.3'
+U 01-01 00:16:18.803 I tlmblackbox (telemetryd-157)                 : rotate logs: '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat.1' -> '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat.2'
+U 01-01 00:16:18.804 I tlmblackbox (telemetryd-157)                 : rotate logs: '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat' -> '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat.1'
+U 01-01 00:16:18.804 I tlmblackbox (telemetryd-157)                 : Creating file '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat'
+U 01-01 00:16:18.941 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:19.318 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:19.401 I LIBPHOTO_R2R(palermo-149/Img_FSM-329)        : R2R: mmap buffer 0: 0x69838000
+U 01-01 00:16:19.402 I LIBPHOTO_R2R(palermo-149/Img_FSM-329)        : R2R: mmap buffer 1: 0x66138000
+U 01-01 00:16:19.403 I LIBPHOTO_R2R(palermo-149/Img_FSM-329)        : R2R: mmap buffer 2: 0x64a70000
+U 01-01 00:16:19.404 I LIBPHOTO_R2R(palermo-149/Img_FSM-329)        : R2R: mmap buffer 3: 0x633a8000
+U 01-01 00:16:19.409 I libHAL      (palermo-149/Img_FSM-329)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev0 associated to dev /dev/video0
+U 01-01 00:16:20.301 I libHAL      (palermo-149/Img_FSM-329)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev5 associated to dev /dev/video4
+U 01-01 00:16:20.345 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:20.376 I libHAL      (palermo-149/Img_FSM-329)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev4 associated to dev /dev/video3
+U 01-01 00:16:20.451 I libHAL      (palermo-149/Img_FSM-329)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev3 associated to dev /dev/video2
+U 01-01 00:16:20.520 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:20.524 I libHAL      (palermo-149/Img_FSM-329)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev2 associated to dev /dev/video1
+U 01-01 00:16:20.597 I LIBCAM_V4L2 (palermo-149/Img_MainCam-378)    : Run cam /dev/video0 in multithreaded mode
+U 01-01 00:16:20.607 I PLRM_server (palermo-149/Img_FSM-329)        : New status: 0x0000300f
+U 01-01 00:16:20.607 I pomp_comm_c (mtp-server-275/client_pomp-348) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_STATUS
+U 01-01 00:16:20.608 I pomp_comm_c (civetitf-153/client_pomp-218)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_STATUS
+U 01-01 00:16:20.609 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ASYNC_EVT_STATUS
+U 01-01 00:16:20.719 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:20.795 I LIBIMAG_MAIN(palermo-149/Img_MainCam-378)    : PhotoSystemInternal::onStart
+U 01-01 00:16:20.795 I LIBIMAG_MAIN(palermo-149/Img_MainCam-378)    : PhotoSystemInternal::onStart maincam capture
+U 01-01 00:16:20.798 I IMAGING_P2A (palermo-149/Img_2A-380)         : STATS 2A CROP: [ 256, 240]-[4351,3215]
+U 01-01 00:16:20.798 I IMAGING_P2A (palermo-149/Img_2A-380)         : 2A INPUT ROI: [ 256, 240]-[4351,3215]
+U 01-01 00:16:20.799 I LIBCAM_ISPP7(palermo-149/Img_2A-380)         : *** Warning: stats window defined by driver is not as expected :
+U 01-01 00:16:20.799 I LIBCAM_ISPP7(palermo-149/Img_2A-380)         :                     driver  != expected
+U 01-01 00:16:20.799 I LIBCAM_ISPP7(palermo-149/Img_2A-380)         :         window_x : {64, 0}    {64, 0}
+U 01-01 00:16:20.799 I LIBCAM_ISPP7(palermo-149/Img_2A-380)         :         window_y : {62, 0}    {62, 0}
+U 01-01 00:16:20.799 I LIBCAM_ISPP7(palermo-149/Img_2A-380)         :     Do not overwrite it. 
+U 01-01 00:16:21.120 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:21.301 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.063982 seconds (r2r=0.057759s copy=0.000958s tds=0.004605s)
+U 01-01 00:16:21.460 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056607 seconds (r2r=0.050705s copy=0.001426s tds=0.003468s)
+U 01-01 00:16:21.465 I LIBIMAG_MAIN(palermo-149/Img_MonoCams-373)   : PhotoSystemInternal::onStart
+U 01-01 00:16:21.465 I LIBIMAG_MAIN(palermo-149/Img_MonoCams-373)   : PhotoSystemInternal::onStart monocams capture
+U 01-01 00:16:21.466 I LIBIMAG_FSM (palermo-149/Img_FSM-329)        : State Changed: Timelapse_Starting(8) -> Timelapse_WaitingAE(9)
+U 01-01 00:16:21.522 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:21.528 E Mt9m031     (palermo-149/Img_MonoCams-373)   : computeNextTargetLuma - 660 nm - ERROR Target luma change 1360-757.40 !
+U 01-01 00:16:21.531 E Mt9m031     (palermo-149/Img_MonoCams-373)   : computeNextTargetLuma - 550 nm - ERROR Target luma change 1360-275.73 !
+U 01-01 00:16:21.630 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059279 seconds (r2r=0.052892s copy=0.000878s tds=0.004565s)
+U 01-01 00:16:21.722 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:21.792 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054902 seconds (r2r=0.049550s copy=0.000811s tds=0.004147s)
+U 01-01 00:16:21.923 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 10 satellites
+U 01-01 00:16:21.961 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058111 seconds (r2r=0.049753s copy=0.000811s tds=0.006642s)
+U 01-01 00:16:22.123 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 11 satellites
+U 01-01 00:16:22.130 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.060126 seconds (r2r=0.051161s copy=0.002119s tds=0.006378s)
+U 01-01 00:16:22.133 I LIBIMAG_FSM (palermo-149/Img_FSM-329)        : TIMED EVENT (ticks=1)
+U 01-01 00:16:22.133 I LIBIMAG_FSM (palermo-149/Img_FSM-329)        : State Changed: Timelapse_WaitingAE(9) -> Timelapse_Running(10)
+U 01-01 00:16:22.296 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059946 seconds (r2r=0.051477s copy=0.001099s tds=0.006981s)
+U 01-01 00:16:22.324 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:22.459 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055337 seconds (r2r=0.050259s copy=0.000684s tds=0.003903s)
+U 01-01 00:16:22.524 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:22.628 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058205 seconds (r2r=0.052135s copy=0.000993s tds=0.004276s)
+U 01-01 00:16:22.631 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:22.632 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:22.635 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:22.635 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:22.635 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:22.635 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:22.636 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:22.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054764 seconds (r2r=0.049340s copy=0.000884s tds=0.004151s)
+U 01-01 00:16:22.926 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:22.961 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057060 seconds (r2r=0.051991s copy=0.000780s tds=0.003894s)
+U 01-01 00:16:23.128 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057311 seconds (r2r=0.051625s copy=0.000924s tds=0.004220s)
+U 01-01 00:16:23.296 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059268 seconds (r2r=0.051018s copy=0.002104s tds=0.005762s)
+U 01-01 00:16:23.461 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057435 seconds (r2r=0.050497s copy=0.000823s tds=0.005634s)
+U 01-01 00:16:23.628 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058044 seconds (r2r=0.052059s copy=0.001180s tds=0.004227s)
+U 01-01 00:16:23.792 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055151 seconds (r2r=0.049307s copy=0.000820s tds=0.004525s)
+U 01-01 00:16:23.961 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057532 seconds (r2r=0.052461s copy=0.000684s tds=0.003904s)
+U 01-01 00:16:24.126 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055965 seconds (r2r=0.050606s copy=0.001235s tds=0.003719s)
+U 01-01 00:16:24.295 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058454 seconds (r2r=0.053506s copy=0.000879s tds=0.003674s)
+U 01-01 00:16:24.460 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056941 seconds (r2r=0.051819s copy=0.001369s tds=0.003362s)
+U 01-01 00:16:24.631 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.060634 seconds (r2r=0.050860s copy=0.002090s tds=0.006981s)
+U 01-01 00:16:24.795 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058158 seconds (r2r=0.049467s copy=0.000783s tds=0.007525s)
+U 01-01 00:16:24.933 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:24.960 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057269 seconds (r2r=0.051827s copy=0.000914s tds=0.004132s)
+U 01-01 00:16:25.125 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055443 seconds (r2r=0.050261s copy=0.001026s tds=0.003688s)
+U 01-01 00:16:25.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055908 seconds (r2r=0.050582s copy=0.001099s tds=0.003834s)
+U 01-01 00:16:25.460 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056960 seconds (r2r=0.051504s copy=0.000783s tds=0.003937s)
+U 01-01 00:16:25.627 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056882 seconds (r2r=0.051387s copy=0.000849s tds=0.004089s)
+U 01-01 00:16:25.792 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055818 seconds (r2r=0.050079s copy=0.001122s tds=0.004096s)
+U 01-01 00:16:25.937 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:25.962 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058550 seconds (r2r=0.051992s copy=0.001342s tds=0.004555s)
+U 01-01 00:16:26.128 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057551 seconds (r2r=0.049931s copy=0.002149s tds=0.005076s)
+U 01-01 00:16:26.137 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:26.296 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059253 seconds (r2r=0.054616s copy=0.000678s tds=0.003565s)
+U 01-01 00:16:26.459 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056391 seconds (r2r=0.051638s copy=0.000787s tds=0.003572s)
+U 01-01 00:16:26.626 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056215 seconds (r2r=0.050966s copy=0.000874s tds=0.003943s)
+U 01-01 00:16:26.637 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:26.638 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:26.641 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:26.641 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:26.680 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:26.680 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:26.680 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:26.715 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:26.793 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056365 seconds (r2r=0.050503s copy=0.001321s tds=0.004155s)
+U 01-01 00:16:26.940 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:26.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054798 seconds (r2r=0.049684s copy=0.000787s tds=0.003857s)
+U 01-01 00:16:27.126 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055730 seconds (r2r=0.050084s copy=0.001482s tds=0.003674s)
+U 01-01 00:16:27.294 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057337 seconds (r2r=0.050898s copy=0.000857s tds=0.005182s)
+U 01-01 00:16:27.462 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058793 seconds (r2r=0.051348s copy=0.001343s tds=0.005726s)
+U 01-01 00:16:27.626 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056128 seconds (r2r=0.050946s copy=0.000871s tds=0.003879s)
+U 01-01 00:16:27.793 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056806 seconds (r2r=0.051307s copy=0.000683s tds=0.004395s)
+U 01-01 00:16:27.961 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056624 seconds (r2r=0.051553s copy=0.000680s tds=0.003912s)
+U 01-01 00:16:28.125 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055278 seconds (r2r=0.049795s copy=0.001313s tds=0.003678s)
+U 01-01 00:16:28.294 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057646 seconds (r2r=0.052066s copy=0.000683s tds=0.004390s)
+U 01-01 00:16:28.319 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:28.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055063 seconds (r2r=0.050135s copy=0.000957s tds=0.003585s)
+U 01-01 00:16:28.520 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:28.629 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058576 seconds (r2r=0.051228s copy=0.002064s tds=0.004519s)
+U 01-01 00:16:28.796 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059589 seconds (r2r=0.051235s copy=0.001488s tds=0.006234s)
+U 01-01 00:16:28.959 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056505 seconds (r2r=0.051678s copy=0.000799s tds=0.003477s)
+U 01-01 00:16:29.126 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055897 seconds (r2r=0.050434s copy=0.001424s tds=0.003654s)
+U 01-01 00:16:29.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056426 seconds (r2r=0.051354s copy=0.000683s tds=0.003902s)
+U 01-01 00:16:29.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055670 seconds (r2r=0.050804s copy=0.000807s tds=0.003583s)
+U 01-01 00:16:29.626 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056743 seconds (r2r=0.051003s copy=0.001060s tds=0.004266s)
+U 01-01 00:16:29.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055073 seconds (r2r=0.049481s copy=0.001226s tds=0.003877s)
+U 01-01 00:16:29.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054683 seconds (r2r=0.050271s copy=0.000755s tds=0.003277s)
+U 01-01 00:16:30.128 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058083 seconds (r2r=0.050437s copy=0.002368s tds=0.004884s)
+U 01-01 00:16:30.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056159 seconds (r2r=0.051057s copy=0.000787s tds=0.003927s)
+U 01-01 00:16:30.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055319 seconds (r2r=0.050657s copy=0.000686s tds=0.003583s)
+U 01-01 00:16:30.527 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:30.626 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056903 seconds (r2r=0.051557s copy=0.000725s tds=0.004189s)
+U 01-01 00:16:30.642 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:30.643 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:30.645 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:30.646 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:30.680 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:30.680 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:30.680 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:30.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055018 seconds (r2r=0.049436s copy=0.001081s tds=0.003983s)
+U 01-01 00:16:30.930 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:30.959 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056038 seconds (r2r=0.051092s copy=0.000953s tds=0.003586s)
+U 01-01 00:16:31.125 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055135 seconds (r2r=0.049588s copy=0.001308s tds=0.003750s)
+U 01-01 00:16:31.130 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:31.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056940 seconds (r2r=0.051580s copy=0.000731s tds=0.004240s)
+U 01-01 00:16:31.462 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059332 seconds (r2r=0.051325s copy=0.001760s tds=0.005793s)
+U 01-01 00:16:31.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054474 seconds (r2r=0.049342s copy=0.000777s tds=0.003921s)
+U 01-01 00:16:31.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055002 seconds (r2r=0.049610s copy=0.001031s tds=0.003961s)
+U 01-01 00:16:31.961 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057866 seconds (r2r=0.052359s copy=0.000876s tds=0.004147s)
+U 01-01 00:16:32.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054585 seconds (r2r=0.049240s copy=0.001178s tds=0.003777s)
+U 01-01 00:16:32.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056912 seconds (r2r=0.051601s copy=0.000873s tds=0.003947s)
+U 01-01 00:16:32.460 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056602 seconds (r2r=0.051376s copy=0.000781s tds=0.004031s)
+U 01-01 00:16:32.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054761 seconds (r2r=0.049603s copy=0.000915s tds=0.003817s)
+U 01-01 00:16:32.794 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058103 seconds (r2r=0.050347s copy=0.001363s tds=0.005902s)
+U 01-01 00:16:32.959 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056329 seconds (r2r=0.051330s copy=0.000792s tds=0.003823s)
+U 01-01 00:16:33.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054970 seconds (r2r=0.049448s copy=0.000789s tds=0.004338s)
+U 01-01 00:16:33.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055682 seconds (r2r=0.050477s copy=0.000797s tds=0.004016s)
+U 01-01 00:16:33.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055282 seconds (r2r=0.050485s copy=0.000808s tds=0.003495s)
+U 01-01 00:16:33.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054527 seconds (r2r=0.049402s copy=0.000756s tds=0.003938s)
+U 01-01 00:16:33.738 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:33.792 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056503 seconds (r2r=0.050687s copy=0.000969s tds=0.004342s)
+U 01-01 00:16:33.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055028 seconds (r2r=0.050269s copy=0.000786s tds=0.003589s)
+U 01-01 00:16:34.127 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058079 seconds (r2r=0.049719s copy=0.001933s tds=0.005961s)
+U 01-01 00:16:34.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056419 seconds (r2r=0.050718s copy=0.000939s tds=0.004258s)
+U 01-01 00:16:34.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055672 seconds (r2r=0.050796s copy=0.000877s tds=0.003501s)
+U 01-01 00:16:34.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054515 seconds (r2r=0.049389s copy=0.000745s tds=0.003950s)
+U 01-01 00:16:34.649 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:34.649 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:34.651 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:34.651 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:34.690 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:34.690 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:34.690 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:34.741 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:34.793 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057643 seconds (r2r=0.051101s copy=0.001742s tds=0.004410s)
+U 01-01 00:16:34.957 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054860 seconds (r2r=0.049988s copy=0.000851s tds=0.003516s)
+U 01-01 00:16:35.117 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:35.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054470 seconds (r2r=0.049326s copy=0.000806s tds=0.003939s)
+U 01-01 00:16:35.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057151 seconds (r2r=0.051736s copy=0.000837s tds=0.004171s)
+U 01-01 00:16:35.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055435 seconds (r2r=0.050786s copy=0.000680s tds=0.003573s)
+U 01-01 00:16:35.625 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056291 seconds (r2r=0.050340s copy=0.001687s tds=0.003824s)
+U 01-01 00:16:35.718 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:35.792 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056877 seconds (r2r=0.050655s copy=0.000865s tds=0.004856s)
+U 01-01 00:16:35.960 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056193 seconds (r2r=0.051297s copy=0.000772s tds=0.003573s)
+U 01-01 00:16:36.120 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:36.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055179 seconds (r2r=0.050013s copy=0.001042s tds=0.003728s)
+U 01-01 00:16:36.295 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058637 seconds (r2r=0.051272s copy=0.000804s tds=0.006002s)
+U 01-01 00:16:36.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054778 seconds (r2r=0.049962s copy=0.000843s tds=0.003586s)
+U 01-01 00:16:36.521 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:36.629 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.060117 seconds (r2r=0.051328s copy=0.002359s tds=0.005092s)
+U 01-01 00:16:36.722 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:36.790 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055078 seconds (r2r=0.049592s copy=0.000755s tds=0.004319s)
+U 01-01 00:16:36.957 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054726 seconds (r2r=0.050081s copy=0.000685s tds=0.003582s)
+U 01-01 00:16:37.123 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:37.125 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056530 seconds (r2r=0.051006s copy=0.000973s tds=0.004050s)
+U 01-01 00:16:37.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055767 seconds (r2r=0.050522s copy=0.000895s tds=0.003799s)
+U 01-01 00:16:37.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055390 seconds (r2r=0.050607s copy=0.000796s tds=0.003492s)
+U 01-01 00:16:37.626 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057079 seconds (r2r=0.051331s copy=0.001045s tds=0.004258s)
+U 01-01 00:16:37.790 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054668 seconds (r2r=0.049489s copy=0.000683s tds=0.003741s)
+U 01-01 00:16:37.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056530 seconds (r2r=0.051742s copy=0.000799s tds=0.003499s)
+U 01-01 00:16:38.128 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058971 seconds (r2r=0.050690s copy=0.002130s tds=0.005727s)
+U 01-01 00:16:38.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056533 seconds (r2r=0.051334s copy=0.000920s tds=0.003891s)
+U 01-01 00:16:38.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055432 seconds (r2r=0.050610s copy=0.000802s tds=0.003497s)
+U 01-01 00:16:38.527 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:38.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055059 seconds (r2r=0.049954s copy=0.000752s tds=0.003908s)
+U 01-01 00:16:38.657 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:38.657 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:38.659 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:38.659 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:38.690 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:38.690 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:38.690 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:38.728 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:38.790 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054700 seconds (r2r=0.049538s copy=0.000684s tds=0.003722s)
+U 01-01 00:16:38.928 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:38.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055967 seconds (r2r=0.050981s copy=0.000930s tds=0.003670s)
+U 01-01 00:16:39.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054448 seconds (r2r=0.049337s copy=0.000772s tds=0.003945s)
+U 01-01 00:16:39.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056893 seconds (r2r=0.051740s copy=0.000678s tds=0.003986s)
+U 01-01 00:16:39.461 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058556 seconds (r2r=0.051817s copy=0.001683s tds=0.004638s)
+U 01-01 00:16:39.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054330 seconds (r2r=0.049314s copy=0.000749s tds=0.003850s)
+U 01-01 00:16:39.731 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:39.790 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054344 seconds (r2r=0.049435s copy=0.000807s tds=0.003708s)
+U 01-01 00:16:39.907 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:39.959 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057061 seconds (r2r=0.051857s copy=0.000679s tds=0.004135s)
+U 01-01 00:16:40.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054484 seconds (r2r=0.049189s copy=0.000799s tds=0.004035s)
+U 01-01 00:16:40.132 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 11 satellites
+U 01-01 00:16:40.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057500 seconds (r2r=0.051710s copy=0.000960s tds=0.004334s)
+U 01-01 00:16:40.459 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056788 seconds (r2r=0.051403s copy=0.000780s tds=0.004053s)
+U 01-01 00:16:40.508 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:40.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054634 seconds (r2r=0.049529s copy=0.000769s tds=0.003917s)
+U 01-01 00:16:40.709 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 11 satellites
+U 01-01 00:16:40.792 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057154 seconds (r2r=0.050172s copy=0.001900s tds=0.004691s)
+U 01-01 00:16:40.910 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:40.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055552 seconds (r2r=0.050661s copy=0.000793s tds=0.003615s)
+U 01-01 00:16:41.112 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 11 satellites
+U 01-01 00:16:41.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054314 seconds (r2r=0.049157s copy=0.000679s tds=0.003942s)
+U 01-01 00:16:41.291 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055938 seconds (r2r=0.050453s copy=0.001003s tds=0.004004s)
+U 01-01 00:16:41.336 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:41.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056505 seconds (r2r=0.051751s copy=0.000772s tds=0.003569s)
+U 01-01 00:16:41.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055561 seconds (r2r=0.049753s copy=0.001003s tds=0.003976s)
+U 01-01 00:16:41.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056086 seconds (r2r=0.050588s copy=0.000991s tds=0.004012s)
+U 01-01 00:16:41.913 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:41.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054605 seconds (r2r=0.050193s copy=0.000739s tds=0.003301s)
+U 01-01 00:16:42.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055684 seconds (r2r=0.049500s copy=0.001315s tds=0.004475s)
+U 01-01 00:16:42.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056526 seconds (r2r=0.051058s copy=0.000895s tds=0.004186s)
+U 01-01 00:16:42.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054575 seconds (r2r=0.049825s copy=0.000792s tds=0.003478s)
+U 01-01 00:16:42.515 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:42.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055228 seconds (r2r=0.049568s copy=0.001006s tds=0.004217s)
+U 01-01 00:16:42.666 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:42.667 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:42.669 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:42.669 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:42.700 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:42.702 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:42.702 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:42.716 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:42.792 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056679 seconds (r2r=0.051132s copy=0.000778s tds=0.004269s)
+U 01-01 00:16:42.960 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054609 seconds (r2r=0.049522s copy=0.000796s tds=0.003902s)
+U 01-01 00:16:43.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054413 seconds (r2r=0.049158s copy=0.000873s tds=0.003895s)
+U 01-01 00:16:43.294 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058547 seconds (r2r=0.052628s copy=0.000716s tds=0.004822s)
+U 01-01 00:16:43.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055387 seconds (r2r=0.050722s copy=0.000681s tds=0.003594s)
+U 01-01 00:16:43.543 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:43.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055859 seconds (r2r=0.051386s copy=0.000741s tds=0.003288s)
+U 01-01 00:16:43.790 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055189 seconds (r2r=0.050181s copy=0.000786s tds=0.003473s)
+U 01-01 00:16:43.957 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055721 seconds (r2r=0.050877s copy=0.000798s tds=0.003545s)
+U 01-01 00:16:44.120 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:44.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055529 seconds (r2r=0.050179s copy=0.001176s tds=0.003671s)
+U 01-01 00:16:44.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057649 seconds (r2r=0.052450s copy=0.000798s tds=0.003814s)
+U 01-01 00:16:44.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055720 seconds (r2r=0.050520s copy=0.000770s tds=0.003938s)
+U 01-01 00:16:44.626 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057992 seconds (r2r=0.051339s copy=0.001125s tds=0.005080s)
+U 01-01 00:16:44.721 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:44.790 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055087 seconds (r2r=0.049689s copy=0.001175s tds=0.003457s)
+U 01-01 00:16:44.948 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:44.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056430 seconds (r2r=0.051504s copy=0.000772s tds=0.003712s)
+U 01-01 00:16:45.125 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056740 seconds (r2r=0.050745s copy=0.001096s tds=0.004325s)
+U 01-01 00:16:45.126 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:45.291 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056000 seconds (r2r=0.050905s copy=0.000800s tds=0.003824s)
+U 01-01 00:16:45.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055374 seconds (r2r=0.050629s copy=0.000767s tds=0.003585s)
+U 01-01 00:16:45.625 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057056 seconds (r2r=0.051155s copy=0.001115s tds=0.004133s)
+U 01-01 00:16:45.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054341 seconds (r2r=0.049592s copy=0.000795s tds=0.003574s)
+U 01-01 00:16:45.926 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:45.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054387 seconds (r2r=0.050038s copy=0.000690s tds=0.003270s)
+U 01-01 00:16:46.125 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057406 seconds (r2r=0.050668s copy=0.001695s tds=0.004360s)
+U 01-01 00:16:46.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057249 seconds (r2r=0.052151s copy=0.000794s tds=0.003914s)
+U 01-01 00:16:46.327 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:16:46.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055755 seconds (r2r=0.050648s copy=0.000996s tds=0.003651s)
+U 01-01 00:16:46.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055777 seconds (r2r=0.050295s copy=0.000943s tds=0.003979s)
+U 01-01 00:16:46.665 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:46.666 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:46.668 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:46.668 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:46.700 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:46.700 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:46.700 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:46.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054612 seconds (r2r=0.049861s copy=0.000781s tds=0.003589s)
+U 01-01 00:16:46.964 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.062595 seconds (r2r=0.057425s copy=0.001022s tds=0.003746s)
+U 01-01 00:16:47.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054555 seconds (r2r=0.049333s copy=0.000709s tds=0.003983s)
+U 01-01 00:16:47.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057221 seconds (r2r=0.052208s copy=0.000685s tds=0.003848s)
+U 01-01 00:16:47.458 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057064 seconds (r2r=0.051779s copy=0.000900s tds=0.003999s)
+U 01-01 00:16:47.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055588 seconds (r2r=0.049811s copy=0.001076s tds=0.003997s)
+U 01-01 00:16:47.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054295 seconds (r2r=0.049610s copy=0.000684s tds=0.003611s)
+U 01-01 00:16:47.934 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:47.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056793 seconds (r2r=0.051384s copy=0.000684s tds=0.004307s)
+U 01-01 00:16:48.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054847 seconds (r2r=0.049352s copy=0.000680s tds=0.004331s)
+U 01-01 00:16:48.133 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:48.296 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.061093 seconds (r2r=0.056377s copy=0.000697s tds=0.003594s)
+U 01-01 00:16:48.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055999 seconds (r2r=0.051027s copy=0.000781s tds=0.003792s)
+U 01-01 00:16:48.622 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054629 seconds (r2r=0.049992s copy=0.000742s tds=0.003449s)
+U 01-01 00:16:48.792 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056995 seconds (r2r=0.051152s copy=0.001527s tds=0.003840s)
+U 01-01 00:16:48.935 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:48.957 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055660 seconds (r2r=0.050577s copy=0.000684s tds=0.003756s)
+U 01-01 00:16:49.113 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:49.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054775 seconds (r2r=0.049257s copy=0.000783s tds=0.004123s)
+U 01-01 00:16:49.291 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056610 seconds (r2r=0.051367s copy=0.000933s tds=0.003750s)
+U 01-01 00:16:49.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055141 seconds (r2r=0.050292s copy=0.000773s tds=0.003629s)
+U 01-01 00:16:49.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055181 seconds (r2r=0.049888s copy=0.000918s tds=0.003925s)
+U 01-01 00:16:49.738 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:49.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057007 seconds (r2r=0.051345s copy=0.000908s tds=0.004233s)
+U 01-01 00:16:49.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055062 seconds (r2r=0.050100s copy=0.000790s tds=0.003618s)
+U 01-01 00:16:50.114 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:50.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056351 seconds (r2r=0.049837s copy=0.001501s tds=0.004609s)
+U 01-01 00:16:50.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057284 seconds (r2r=0.051781s copy=0.000906s tds=0.004198s)
+U 01-01 00:16:50.317 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:50.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055034 seconds (r2r=0.050119s copy=0.000787s tds=0.003594s)
+U 01-01 00:16:50.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055648 seconds (r2r=0.049971s copy=0.000887s tds=0.004348s)
+U 01-01 00:16:50.671 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:50.672 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:50.674 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:50.674 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:50.710 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:50.710 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:50.710 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:50.716 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:50.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057131 seconds (r2r=0.051745s copy=0.000778s tds=0.004030s)
+U 01-01 00:16:50.942 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:50.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055078 seconds (r2r=0.050188s copy=0.000795s tds=0.003593s)
+U 01-01 00:16:51.117 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:51.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054983 seconds (r2r=0.049397s copy=0.000980s tds=0.004045s)
+U 01-01 00:16:51.291 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056025 seconds (r2r=0.051236s copy=0.000716s tds=0.003689s)
+U 01-01 00:16:51.318 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:51.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056364 seconds (r2r=0.050680s copy=0.001623s tds=0.003594s)
+U 01-01 00:16:51.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056385 seconds (r2r=0.050657s copy=0.001086s tds=0.004074s)
+U 01-01 00:16:51.719 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 11 satellites
+U 01-01 00:16:51.790 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055845 seconds (r2r=0.050752s copy=0.000793s tds=0.003577s)
+U 01-01 00:16:51.920 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:51.958 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055340 seconds (r2r=0.050551s copy=0.000679s tds=0.003725s)
+U 01-01 00:16:52.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056096 seconds (r2r=0.050535s copy=0.000932s tds=0.004228s)
+U 01-01 00:16:52.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055746 seconds (r2r=0.050639s copy=0.000787s tds=0.003653s)
+U 01-01 00:16:52.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055270 seconds (r2r=0.050355s copy=0.000831s tds=0.003604s)
+U 01-01 00:16:52.547 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:52.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057167 seconds (r2r=0.051465s copy=0.001091s tds=0.004172s)
+U 01-01 00:16:52.724 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:52.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055034 seconds (r2r=0.050197s copy=0.000772s tds=0.003581s)
+U 01-01 00:16:52.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055170 seconds (r2r=0.050211s copy=0.000876s tds=0.003610s)
+U 01-01 00:16:53.123 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:53.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056636 seconds (r2r=0.050865s copy=0.000801s tds=0.004411s)
+U 01-01 00:16:53.291 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056611 seconds (r2r=0.051523s copy=0.000790s tds=0.003902s)
+U 01-01 00:16:53.324 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:53.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055892 seconds (r2r=0.050999s copy=0.000804s tds=0.003706s)
+U 01-01 00:16:53.625 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057567 seconds (r2r=0.051247s copy=0.000754s tds=0.005049s)
+U 01-01 00:16:53.725 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:53.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055281 seconds (r2r=0.050550s copy=0.000681s tds=0.003653s)
+U 01-01 00:16:53.926 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:53.957 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055292 seconds (r2r=0.050416s copy=0.000791s tds=0.003702s)
+U 01-01 00:16:54.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055328 seconds (r2r=0.049898s copy=0.000786s tds=0.004252s)
+U 01-01 00:16:54.126 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 11 satellites
+U 01-01 00:16:54.299 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.064204 seconds (r2r=0.054887s copy=0.003038s tds=0.005880s)
+U 01-01 00:16:54.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055153 seconds (r2r=0.050081s copy=0.000965s tds=0.003720s)
+U 01-01 00:16:54.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055404 seconds (r2r=0.049830s copy=0.000731s tds=0.004407s)
+U 01-01 00:16:54.677 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:54.678 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:54.681 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:54.681 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:54.720 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:54.720 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:54.720 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:54.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054872 seconds (r2r=0.050125s copy=0.000788s tds=0.003490s)
+U 01-01 00:16:54.957 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056101 seconds (r2r=0.050943s copy=0.000975s tds=0.003804s)
+U 01-01 00:16:55.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055181 seconds (r2r=0.049789s copy=0.001005s tds=0.003983s)
+U 01-01 00:16:55.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056231 seconds (r2r=0.051180s copy=0.000790s tds=0.003774s)
+U 01-01 00:16:55.307 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:55.457 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055974 seconds (r2r=0.050723s copy=0.000682s tds=0.004185s)
+U 01-01 00:16:55.507 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:55.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055426 seconds (r2r=0.049756s copy=0.000755s tds=0.004477s)
+U 01-01 00:16:55.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054754 seconds (r2r=0.049902s copy=0.000796s tds=0.003661s)
+U 01-01 00:16:55.960 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059618 seconds (r2r=0.053621s copy=0.000779s tds=0.004105s)
+U 01-01 00:16:56.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054796 seconds (r2r=0.049576s copy=0.000823s tds=0.004001s)
+U 01-01 00:16:56.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055995 seconds (r2r=0.050780s copy=0.001075s tds=0.003739s)
+U 01-01 00:16:56.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055003 seconds (r2r=0.049959s copy=0.000948s tds=0.003620s)
+U 01-01 00:16:56.510 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:16:56.622 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055477 seconds (r2r=0.049778s copy=0.000741s tds=0.004413s)
+U 01-01 00:16:56.790 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056180 seconds (r2r=0.051035s copy=0.000986s tds=0.003767s)
+U 01-01 00:16:56.936 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:56.955 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054570 seconds (r2r=0.049684s copy=0.000774s tds=0.003727s)
+U 01-01 00:16:57.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054694 seconds (r2r=0.049442s copy=0.000840s tds=0.004013s)
+U 01-01 00:16:57.137 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:57.291 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056538 seconds (r2r=0.051266s copy=0.000996s tds=0.003877s)
+U 01-01 00:16:57.455 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054368 seconds (r2r=0.049485s copy=0.000788s tds=0.003714s)
+U 01-01 00:16:57.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055709 seconds (r2r=0.049866s copy=0.000738s tds=0.004653s)
+U 01-01 00:16:57.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056892 seconds (r2r=0.051487s copy=0.000917s tds=0.004096s)
+U 01-01 00:16:57.915 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:16:57.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054180 seconds (r2r=0.049332s copy=0.000773s tds=0.003694s)
+U 01-01 00:16:58.116 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:16:58.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054758 seconds (r2r=0.049574s copy=0.000694s tds=0.004001s)
+U 01-01 00:16:58.292 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058020 seconds (r2r=0.052669s copy=0.000848s tds=0.004109s)
+U 01-01 00:16:58.455 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054416 seconds (r2r=0.049504s copy=0.000799s tds=0.003648s)
+U 01-01 00:16:58.517 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:58.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056884 seconds (r2r=0.050304s copy=0.001574s tds=0.004560s)
+U 01-01 00:16:58.684 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:58.685 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:58.687 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:16:58.687 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:58.719 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:58.720 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:58.721 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:16:58.721 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:16:58.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055054 seconds (r2r=0.050392s copy=0.000680s tds=0.003590s)
+U 01-01 00:16:58.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054570 seconds (r2r=0.049838s copy=0.000727s tds=0.003624s)
+U 01-01 00:16:59.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055858 seconds (r2r=0.050318s copy=0.000906s tds=0.004144s)
+U 01-01 00:16:59.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056496 seconds (r2r=0.051285s copy=0.000687s tds=0.003961s)
+U 01-01 00:16:59.455 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054928 seconds (r2r=0.050008s copy=0.000786s tds=0.003666s)
+U 01-01 00:16:59.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057075 seconds (r2r=0.051474s copy=0.001071s tds=0.004019s)
+U 01-01 00:16:59.721 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:16:59.788 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054738 seconds (r2r=0.049886s copy=0.000683s tds=0.003678s)
+U 01-01 00:16:59.922 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:16:59.955 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054427 seconds (r2r=0.049488s copy=0.000820s tds=0.003625s)
+U 01-01 00:17:00.123 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056371 seconds (r2r=0.050793s copy=0.000778s tds=0.004367s)
+U 01-01 00:17:00.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056209 seconds (r2r=0.051116s copy=0.000804s tds=0.003618s)
+U 01-01 00:17:00.324 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:17:00.455 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054434 seconds (r2r=0.049583s copy=0.000685s tds=0.003774s)
+U 01-01 00:17:00.525 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:17:00.625 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.058456 seconds (r2r=0.051457s copy=0.001720s tds=0.004075s)
+U 01-01 00:17:00.788 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054706 seconds (r2r=0.050009s copy=0.000681s tds=0.003622s)
+U 01-01 00:17:00.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055191 seconds (r2r=0.050271s copy=0.000779s tds=0.003701s)
+U 01-01 00:17:01.124 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057523 seconds (r2r=0.049927s copy=0.000763s tds=0.006376s)
+U 01-01 00:17:01.150 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:17:01.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055964 seconds (r2r=0.051156s copy=0.000685s tds=0.003725s)
+U 01-01 00:17:01.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055497 seconds (r2r=0.050291s copy=0.001089s tds=0.003723s)
+U 01-01 00:17:01.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055946 seconds (r2r=0.050425s copy=0.000976s tds=0.004108s)
+U 01-01 00:17:01.727 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:17:01.788 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054704 seconds (r2r=0.049955s copy=0.000765s tds=0.003603s)
+U 01-01 00:17:01.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056040 seconds (r2r=0.050629s copy=0.000981s tds=0.004034s)
+U 01-01 00:17:02.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055629 seconds (r2r=0.049622s copy=0.001643s tds=0.003888s)
+U 01-01 00:17:02.128 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:17:02.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056465 seconds (r2r=0.050909s copy=0.000773s tds=0.004073s)
+U 01-01 00:17:02.329 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:17:02.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056458 seconds (r2r=0.050881s copy=0.001052s tds=0.004034s)
+U 01-01 00:17:02.530 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:17:02.622 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055680 seconds (r2r=0.050176s copy=0.000949s tds=0.003978s)
+U 01-01 00:17:02.687 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:02.687 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:02.689 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:02.689 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:17:02.722 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:17:02.722 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:17:02.722 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:17:02.730 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:17:02.788 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054787 seconds (r2r=0.050029s copy=0.000788s tds=0.003582s)
+U 01-01 00:17:02.957 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056608 seconds (r2r=0.050529s copy=0.000932s tds=0.004722s)
+U 01-01 00:17:03.121 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054882 seconds (r2r=0.049507s copy=0.000683s tds=0.004291s)
+U 01-01 00:17:03.132 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:17:03.288 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054815 seconds (r2r=0.050060s copy=0.000789s tds=0.003569s)
+U 01-01 00:17:03.332 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:17:03.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055767 seconds (r2r=0.050713s copy=0.000872s tds=0.003648s)
+U 01-01 00:17:03.622 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055894 seconds (r2r=0.050130s copy=0.001003s tds=0.004211s)
+U 01-01 00:17:03.734 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:17:03.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055559 seconds (r2r=0.050774s copy=0.000795s tds=0.003492s)
+U 01-01 00:17:03.955 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055149 seconds (r2r=0.050205s copy=0.000900s tds=0.003645s)
+U 01-01 00:17:04.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055115 seconds (r2r=0.049591s copy=0.000775s tds=0.004314s)
+U 01-01 00:17:04.295 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.061763 seconds (r2r=0.056835s copy=0.000910s tds=0.003528s)
+U 01-01 00:17:04.335 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:17:04.454 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054090 seconds (r2r=0.049267s copy=0.000836s tds=0.003605s)
+U 01-01 00:17:04.512 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:17:04.623 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056186 seconds (r2r=0.050532s copy=0.000928s tds=0.003916s)
+U 01-01 00:17:04.712 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:17:04.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056311 seconds (r2r=0.051139s copy=0.000929s tds=0.003851s)
+U 01-01 00:17:04.955 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054854 seconds (r2r=0.049795s copy=0.000981s tds=0.003589s)
+U 01-01 00:17:05.113 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 10 satellites
+U 01-01 00:17:05.121 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054761 seconds (r2r=0.049588s copy=0.000904s tds=0.003853s)
+U 01-01 00:17:05.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059571 seconds (r2r=0.052162s copy=0.000971s tds=0.006045s)
+U 01-01 00:17:05.313 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 11 satellites
+U 01-01 00:17:05.454 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054478 seconds (r2r=0.049203s copy=0.001265s tds=0.003625s)
+U 01-01 00:17:05.516 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:17:05.622 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055484 seconds (r2r=0.050108s copy=0.000959s tds=0.003958s)
+U 01-01 00:17:05.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055785 seconds (r2r=0.050955s copy=0.000776s tds=0.003662s)
+U 01-01 00:17:05.955 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054735 seconds (r2r=0.049843s copy=0.000882s tds=0.003515s)
+U 01-01 00:17:06.118 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:17:06.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055728 seconds (r2r=0.050399s copy=0.000944s tds=0.003893s)
+U 01-01 00:17:06.289 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055848 seconds (r2r=0.051125s copy=0.000758s tds=0.003575s)
+U 01-01 00:17:06.318 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:17:06.454 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054533 seconds (r2r=0.049726s copy=0.001117s tds=0.003288s)
+U 01-01 00:17:06.518 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:17:06.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057430 seconds (r2r=0.051667s copy=0.001109s tds=0.004049s)
+U 01-01 00:17:06.697 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:06.697 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:06.699 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:06.699 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:17:06.730 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:17:06.730 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:17:06.730 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:17:06.788 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054904 seconds (r2r=0.050195s copy=0.000763s tds=0.003555s)
+U 01-01 00:17:06.920 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:17:06.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055955 seconds (r2r=0.050962s copy=0.000781s tds=0.003825s)
+U 01-01 00:17:07.121 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:17:07.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056287 seconds (r2r=0.050846s copy=0.000929s tds=0.004100s)
+U 01-01 00:17:07.289 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055512 seconds (r2r=0.050770s copy=0.000786s tds=0.003481s)
+U 01-01 00:17:07.454 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054727 seconds (r2r=0.049320s copy=0.001259s tds=0.003589s)
+U 01-01 00:17:07.624 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057818 seconds (r2r=0.052063s copy=0.000903s tds=0.004289s)
+U 01-01 00:17:07.788 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054780 seconds (r2r=0.050005s copy=0.000796s tds=0.003513s)
+U 01-01 00:17:07.955 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055217 seconds (r2r=0.049665s copy=0.001155s tds=0.003735s)
+U 01-01 00:17:08.122 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055868 seconds (r2r=0.050688s copy=0.000808s tds=0.003979s)
+U 01-01 00:17:08.289 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055575 seconds (r2r=0.050804s copy=0.000789s tds=0.003507s)
+U 01-01 00:17:08.325 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:17:08.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055771 seconds (r2r=0.050844s copy=0.000774s tds=0.003723s)
+U 01-01 00:17:08.525 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:17:08.622 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056255 seconds (r2r=0.050716s copy=0.001107s tds=0.003967s)
+U 01-01 00:17:08.787 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054745 seconds (r2r=0.049819s copy=0.000921s tds=0.003504s)
+U 01-01 00:17:08.957 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056932 seconds (r2r=0.051853s copy=0.000922s tds=0.003759s)
+U 01-01 00:17:09.121 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055140 seconds (r2r=0.050000s copy=0.000805s tds=0.003923s)
+U 01-01 00:17:09.288 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055278 seconds (r2r=0.050598s copy=0.000682s tds=0.003605s)
+U 01-01 00:17:09.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056591 seconds (r2r=0.051161s copy=0.000888s tds=0.004030s)
+U 01-01 00:17:09.504 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:17:09.621 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055419 seconds (r2r=0.050110s copy=0.000883s tds=0.003984s)
+U 01-01 00:17:09.788 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055004 seconds (r2r=0.050171s copy=0.000790s tds=0.003564s)
+U 01-01 00:17:09.930 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:17:09.956 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057009 seconds (r2r=0.051506s copy=0.000787s tds=0.004099s)
+U 01-01 00:17:10.121 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054718 seconds (r2r=0.049680s copy=0.000801s tds=0.003825s)
+U 01-01 00:17:10.131 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:17:10.293 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.059924 seconds (r2r=0.054734s copy=0.000923s tds=0.003879s)
+U 01-01 00:17:10.331 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:17:10.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056377 seconds (r2r=0.051195s copy=0.000703s tds=0.003829s)
+U 01-01 00:17:10.621 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055649 seconds (r2r=0.050337s copy=0.000890s tds=0.003961s)
+U 01-01 00:17:10.704 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:10.705 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:10.707 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:17:10.707 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:17:10.732 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:17:10.741 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:17:10.741 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_VALUES
+U 01-01 00:17:10.741 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:17:10.791 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057814 seconds (r2r=0.052564s copy=0.000770s tds=0.003982s)
+U 01-01 00:17:10.933 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 13 satellites
+U 01-01 00:17:10.954 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054937 seconds (r2r=0.049904s copy=0.001019s tds=0.003613s)
+U 01-01 00:17:11.109 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:17:11.121 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054942 seconds (r2r=0.049989s copy=0.000777s tds=0.003766s)
+U 01-01 00:17:11.289 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056375 seconds (r2r=0.051314s copy=0.000949s tds=0.003645s)
+U 01-01 00:17:11.335 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 12 satellites
+U 01-01 00:17:11.455 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055639 seconds (r2r=0.050249s copy=0.001160s tds=0.003628s)
+U 01-01 00:17:11.535 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 14 satellites
+U 01-01 00:17:11.622 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055816 seconds (r2r=0.050530s copy=0.000896s tds=0.003936s)
+U 01-01 00:17:11.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056287 seconds (r2r=0.050703s copy=0.000878s tds=0.004072s)
+U 01-01 00:17:11.936 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:17:11.954 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054542 seconds (r2r=0.049446s copy=0.000682s tds=0.003923s)
+U 01-01 00:17:12.113 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:17:12.121 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055066 seconds (r2r=0.050080s copy=0.000795s tds=0.003786s)
+U 01-01 00:17:12.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057659 seconds (r2r=0.052086s copy=0.000792s tds=0.004301s)
+U 01-01 00:17:12.454 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054800 seconds (r2r=0.049601s copy=0.000794s tds=0.003834s)
+U 01-01 00:17:12.622 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055865 seconds (r2r=0.050561s copy=0.000730s tds=0.004138s)
+U 01-01 00:17:12.789 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056602 seconds (r2r=0.051183s copy=0.000775s tds=0.004059s)
+U 01-01 00:17:12.939 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 15 satellites
+U 01-01 00:17:12.954 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.054716 seconds (r2r=0.049528s copy=0.000682s tds=0.003933s)
+U 01-01 00:17:13.115 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 16 satellites
+U 01-01 00:17:13.121 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.055425 seconds (r2r=0.050364s copy=0.000682s tds=0.003864s)
+U 01-01 00:17:13.290 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.057069 seconds (r2r=0.051706s copy=0.000811s tds=0.003941s)
+U 01-01 00:17:13.452 I pomp_comm_s (palermo-149/MainLoop-224)       : server_generated_message_handler: received event SICILIA_CTRL_STOP_SENSORS
+U 01-01 00:17:13.452 I LIBIMAG_FSM (palermo-149/Img_FSM-329)        : State Changed: Timelapse_Running(10) -> Timelapse_EndCapture(11)
+U 01-01 00:17:13.452 I LIBIMAG_FSM (palermo-149/Img_FSM-329)        : State Changed: Timelapse_EndCapture(11) -> Timelapse_Stopping(12)
+U 01-01 00:17:13.452 I pomp_comm_c (sicilia_epic-130/client_pomp-143): client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:17:13.456 I LIBIMAG_2A  (palermo-149/Img_2A-380)         : 2A processed in 0.056909 seconds (r2r=0.049694s copy=0.000680s tds=0.006135s)
+U 01-01 00:17:13.541 I colibry     (sensors_ir-328/thread_main-330) : GPS fix with 17 satellites
+U 01-01 00:17:13.740 I LIBIMAG_MAIN(palermo-149/Img_MonoCams-373)   : PhotoSystemInternal::onStop
+U 01-01 00:17:13.898 I LIBIMAG_MAIN(palermo-149/Img_MainCam-378)    : PhotoSystemInternal::onStop
+U 01-01 00:17:13.899 I LIBIMAG_FSM (palermo-149/Img_FSM-329)        : State Changed: Timelapse_Stopping(12) -> Timelapse_Stopped(13)
+U 01-01 00:17:13.918 I LIBIMAG_MAIN(palermo-149/Img_FSM-329)        : Sync file-system...
+U 01-01 00:17:13.951 I LIBIMAG_MAIN(palermo-149/Img_FSM-329)        : Sync file-system done
+U 01-01 00:17:13.951 I PLRM_imaging(palermo-149/Img_FSM-329)        : onRecordSessionDone
+U 01-01 00:17:13.951 I LIBIMAG_FSM (palermo-149/Img_FSM-329)        : State Changed: Timelapse_Stopped(13) -> Ready(2)
+U 01-01 00:17:13.952 I sensors     (sensors_main-152/server_pomp-170): [SERVER_POMP] server_event_cb : event=2(MSG) conn=0x76800468 msg=0x76801638
+U 01-01 00:17:13.952 I sensors     (sensors_main-152/server_pomp-170): [SERVER_POMP] HEATING_IMU_STOP (old f_heat_off: FALSE)
+U 01-01 00:17:13.952 I sensors     (sensors_ir-328/server_pomp-332) : [SERVER_POMP] server_event_cb : event=2(MSG) conn=0xe00c48 msg=0xe01e18
+U 01-01 00:17:13.952 I sensors     (sensors_ir-328/server_pomp-332) : [SERVER_POMP] HEATING_IMU_STOP (old f_heat_off: FALSE)
+U 01-01 00:17:13.953 I PLRM_server (palermo-149/MainLoop-224)       : event_imu_heating_status: id=0 status=0
+U 01-01 00:17:13.954 I pomp_comm_c (mtp-server-275/client_pomp-348) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:17:13.954 I tlmblackbox (telemetryd-157)                 : setEnabled 0
+U 01-01 00:17:13.955 I PLRM_server (palermo-149/MainLoop-224)       : event_imu_heating_status: id=1 status=0
+U 01-01 00:17:13.955 I pomp_comm_c (mtp-server-275/client_pomp-348) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:17:13.957 I pomp_comm_c (civetitf-153/client_pomp-218)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:17:13.957 I pomp_comm_c (civetitf-153/client_pomp-218)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:17:13.977 I tlmblackbox (telemetryd-157)                 : Closing file '/tmp/mounts/usb/sda1/DCIM/0003/sequoia_param.dat'
+U 01-01 00:17:13.987 I tlmblackbox (telemetryd-157)                 : setLogDir '/data/blackbox'
+U 01-01 00:17:13.997 I tlmblackbox (telemetryd-157)                 : setEnabled 1
+U 01-01 00:17:13.997 I tlmblackbox (telemetryd-157)                 : rotate logs: '/data/blackbox/sequoia_param.dat.3' -> '/data/blackbox/sequoia_param.dat.4'
+U 01-01 00:17:13.997 I tlmblackbox (telemetryd-157)                 : rotate logs: '/data/blackbox/sequoia_param.dat.2' -> '/data/blackbox/sequoia_param.dat.3'
+U 01-01 00:17:13.998 I tlmblackbox (telemetryd-157)                 : rotate logs: '/data/blackbox/sequoia_param.dat.1' -> '/data/blackbox/sequoia_param.dat.2'
+U 01-01 00:17:13.998 I tlmblackbox (telemetryd-157)                 : rotate logs: '/data/blackbox/sequoia_param.dat' -> '/data/blackbox/sequoia_param.dat.1'
+U 01-01 00:17:13.998 I tlmblackbox (telemetryd-157)                 : Creating file '/data/blackbox/sequoia_param.dat'
+U 01-01 00:17:14.058 I PLRM_imaging(palermo-149/Img_FSM-329)        : -------------------------------------------------------------------------------------------------------------------------------
+K 01-01 00:00:00.004 I KERNEL                                       : wlcore: down
+K 01-01 00:00:00.091 I KERNEL                                       : cfg80211: Calling CRDA to update world regulatory domain
+K 01-01 00:00:01.079 I KERNEL                                       : wlcore: down
+K 01-01 00:00:02.796 I KERNEL                                       : mtp_open
+K 05-04 06:48:40.100 I KERNEL                                       : Powering on maincam
+K 05-04 06:48:40.214 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 05-04 06:48:40.282 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 05-04 06:48:40.282 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 05-04 06:48:40.282 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 05-04 06:48:40.282 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 05-04 06:50:00.729 I KERNEL                                       : Powering off maincam
+K 05-04 06:50:23.536 I KERNEL                                       : Powering on maincam
+K 05-04 06:50:23.662 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 05-04 06:50:23.719 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 05-04 06:50:23.720 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 05-04 06:50:23.720 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 05-04 06:50:23.720 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 05-04 06:51:16.836 I KERNEL                                       : Powering off maincam
