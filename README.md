@@ -23,5 +23,9 @@ Some of the data will become available as they are uploaded by the team.
 
 A link is being created to facilitate updates from the main server directly available to the ASR website, as these are done immediately as missions occur. 
 
+## Support/ Engagement
+
+We'd love to hear from you. You can post a comment or request for additional information using team-asr(at)as-research.org or visit www.as-research.org and use the contacts page.
+
 ## Licensing Terms:
 Work and material herein is released under a GNU General Public License. A copy of license terms can be found here: https://www.gnu.org/licenses/gpl.html
