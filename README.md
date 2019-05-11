@@ -10,7 +10,8 @@ c. Analytics of the images e.g. vegetation indecies, terrain maps, etc
 d. Flight plans and flight maps
 
 ## Usage
-To use the data herein, you need photogrametry software, such as the OpenDrone Map application suite, : https://github.com/team-asr/WebODM
+To use the data herein, you need photogrametry software, such as the OpenDrone Map application suite, : https://github.com/team-asr/WebODM. Working knowledge of photogrametry software is required,
+and requires at the least basic skills in GIS.
 We've included a toolkit to extract image metadata, in the folder ImageMetadata (https://github.com/team-asr/od-Data/tree/master/ImageMetadata). Visit the folder to find
 invocation instructions. The toolkit is developed using the Java programming language and a working knowledge of the language isn't required.
 
