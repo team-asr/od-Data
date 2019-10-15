@@ -1,0 +1,67 @@
+<PAMDataset>
+  <Metadata domain="xml:XMP" format="xml">
+    <?xpacket begin="&#xFEFF;" id="W5M0MpCehiHzreSzNTczkc9d"?>
+    <x:xmpmeta xmlns:x="adobe:ns:meta/">
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="" xmlns:Camera="http://pix4d.com/camera/1.0/" Camera:RigName="Sequoia" Camera:RigCameraIndex="0" Camera:Yaw="36.515793" Camera:Pitch="14.557178" Camera:Roll="-0.950367" Camera:BandGain="1.000000" Camera:SensorTemperature="71.000000" Camera:LineReadoutTime="23076" Camera:PrincipalPoint="2.389482,1.785997" Camera:ModelType="fisheye" Camera:FisheyeAffineSymmetric="1" Camera:FisheyeAffineMatrix="1658.505410493,0,0,1658.505410493" Camera:FisheyePolynomial="0,1,0.013090534,-0.151053944" Camera:GPSXYAccuracy="1.258650" Camera:GPSZAccuracy="1.753000" Camera:FlightUUID="2E85D1AE71A37242DAA152C695457DDB" Camera:CaptureUUID="88ABEFA8F40BAADE50B6F1D266E52C96" Camera:SunshineSerialNumber="PI040379AA6H001230" Camera:IrradianceCalibrationMeasurement="0,600,11,2,1,600,266,38,2,600,4475,646,3,600,65535,16122" Camera:CalibrationMeasurement="1,0.00561797752808989,579" Camera:CalibrationPicture="0">
+          <Camera:BandName>
+            <rdf:Seq>
+              <rdf:li>Green</rdf:li>
+            </rdf:Seq>
+          </Camera:BandName>
+          <Camera:CentralWavelength>
+            <rdf:Seq>
+              <rdf:li>550.000000</rdf:li>
+            </rdf:Seq>
+          </Camera:CentralWavelength>
+          <Camera:WavelengthFWHM>
+            <rdf:Seq>
+              <rdf:li>40.000000</rdf:li>
+            </rdf:Seq>
+          </Camera:WavelengthFWHM>
+          <Camera:BlackCurrent>
+            <rdf:Seq>
+              <rdf:li>76.000000</rdf:li>
+            </rdf:Seq>
+          </Camera:BlackCurrent>
+          <Camera:VignettingPolynomial2DName>
+            <rdf:Seq>
+              <rdf:li>0,0,1,0,2,0,3,0,4,0,0,1,0,2,0,3,0,4,1,1,1,2,1,3,2,1,2,2,3,1</rdf:li>
+            </rdf:Seq>
+          </Camera:VignettingPolynomial2DName>
+          <Camera:VignettingPolynomial2D>
+            <rdf:Seq>
+              <rdf:li>0.7333841987224778,1.0735210017264381,-1.9828562309551325,1.8826443442491501,-0.9418153042977196,0.3983379958128024,-0.4933235224769038,0.1414119845490558,-0.0813323923319098,-0.9332140988873637,0.8979315507353892,-0.0128935490947628,1.0087520759953845,-0.9427629297129418,-0.0267420128135462</rdf:li>
+            </rdf:Seq>
+          </Camera:VignettingPolynomial2D>
+          <Camera:InvalidPixel>
+            <rdf:Seq>
+              <rdf:li>783,201</rdf:li>
+            </rdf:Seq>
+          </Camera:InvalidPixel>
+          <Camera:IrradianceList>7jrYHAAAAACPBX0AAQBkANrercI1TZbADCt0wOZI2xwAAAAAjQV9AAEAZADvU63C1Z/RwKQbX8BnZd4cAAAAAJQFfQABAGQALkSqwrqY5sAHKpnApGrhHAAAAACYBX4AAQBkAGEYqcIqFsnA9ACrwKR05BwAAAAAnQV+AAEAZABLnqzCwkI+wHxOkcDLg+ccAAAAAJQFfQABAGQAHKmywnGLKkBcFTO/NIvqHAAAAAB9BXsAAQBkABU+tcJEx9JAbiaJQGyZ7RwAAAAAawV6AAEAZAAp76/CW64mQe/NgkDEo/AcAAAAAHoFewABAGQADyukwi8hCEF3gyjA5qzzHAAAAACRBX0AAQBkADhQncKxBtRAOz6RwLWw9hwAAAAAoAV+AAEAZADloKDCq32oQElzGsEGvfkcAAAAALEFgAABAGQAi1qpwjqEjr9G0djAz8v8HAAAAACiBX8AAQBkABO3rsKttxHAXKwhwA==
+</Camera:IrradianceList>
+        </rdf:Description>
+      </rdf:RDF>
+    </x:xmpmeta>
+    <?xpacket end="w"?>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Histograms>
+      <HistItem>
+        <HistMin>13926.24</HistMin>
+        <HistMax>65497.76</HistMax>
+        <BucketCount>1000</BucketCount>
+        <IncludeOutOfRange>0</IncludeOutOfRange>
+        <Approximate>1</Approximate>
+        <HistCounts>2|0|0|0|0|0|0|1|0|1|0|0|1|0|1|0|1|0|0|0|0|1|1|0|0|2|1|1|0|1|2|0|2|0|0|3|1|1|2|0|1|1|1|0|0|3|2|3|2|0|2|1|1|3|0|2|3|0|2|0|0|0|1|1|0|3|2|4|3|2|0|1|1|5|3|0|1|4|2|5|0|1|1|2|2|0|4|5|4|4|0|5|2|3|5|0|3|2|3|2|0|5|1|2|4|5|0|2|4|8|3|0|1|5|2|5|0|5|5|8|3|0|4|5|5|7|0|4|12|8|7|0|4|8|9|9|0|10|10|9|11|16|0|8|15|14|10|0|15|21|19|16|0|13|19|20|16|0|26|27|20|30|0|26|19|27|31|0|36|43|39|42|44|0|37|37|43|49|0|45|59|47|50|0|67|59|75|70|0|85|80|68|94|0|89|94|105|110|0|103|124|134|115|0|141|134|145|151|152|0|167|175|169|178|0|184|195|236|233|0|190|220|217|255|0|265|258|278|273|0|265|287|284|336|0|301|305|339|300|0|315|335|344|396|361|0|383|386|367|373|0|431|366|393|393|0|383|410|388|390|0|368|347|362|379|0|376|375|379|348|0|372|363|387|368|0|340|346|344|341|311|0|349|311|330|328|0|333|313|349|363|0|331|377|341|324|0|300|284|310|300|0|285|332|287|322|0|272|298|315|312|304|0|332|273|283|256|0|275|287|246|259|0|255|268|251|249|0|274|250|282|274|0|270|246|259|237|0|282|250|244|269|0|265|244|272|228|233|0|250|255|250|241|0|259|284|208|233|0|226|236|247|225|0|243|239|255|243|0|246|241|243|261|0|243|262|224|215|0|217|230|194|194|202|0|228|256|226|233|0|235|230|237|233|0|211|210|206|190|0|207|184|217|194|0|209|224|233|210|0|222|217|208|213|210|0|212|230|206|202|0|220|236|215|211|0|209|234|214|189|0|176|195|201|195|0|169|164|167|182|0|194|191|168|174|0|186|191|175|202|189|0|191|176|167|185|0|178|169|163|169|0|178|172|150|184|0|164|173|154|141|0|161|185|177|156|0|137|172|151|147|0|144|152|152|127|167|0|154|155|148|136|0|146|179|141|154|0|130|134|127|131|0|133|119|134|143|0|131|145|112|121|0|115|118|128|124|112|0|113|113|122|111|0|129|107|105|118|0|110|124|117|126|0|98|109|93|109|0|98|94|78|100|0|96|87|91|108|0|91|89|78|80|89|0|66|66|84|71|0|74|77|75|63|0|58|76|71|63|0|64|80|55|63|0|71|72|61|59|0|66|54|50|46|0|62|62|58|62|66|0|59|53|50|52|0|56|55|39|48|0|50|48|45|58|0|42|47|52|31|0|50|48|55|35|0|51|44|30|48|41|0|42|32|47|33|0|32|32|36|41|0|35|30|32|44|0|28|39|33|31|0|36|35|27|28|0|29|28|21|29|0|34|30|26|27|29|0|28|25|21|35|0|22|34|17|31|0|19|20|9|21|0|21|16|25|21|0|25|19|24|14|0|21|11|17|17|0|16|26|16|27|17|0|8|12|17|13|0|14|9|12|15|0|7|14|11|10|0|10|11|9|17|0|13|7|15|7|0|13|8|10|12|11|0|13|11|13|11|0|12|5|11|8|0|8|3|9|10|0|10|11|9|9|0|7|3|9|8|0|11|4|6|11|0|8|7|2|7|3|0|7|7|6|10|0|8|4|4|5|0|7|5|5|4|0|7|9|6|6|0|4|4|4|10|0|6|12|9|4|0|6|9|4|6|7|0|5|7|3|7|0|6|6|4|6|0|5|4|7|3|0|3|6|10|5|0|6|2|9|4|0|9|2|8|7|0|2|3|5|5|6|0|2|12|6|7|0|2|5|5|2|0|3|7|2|4|0|9|5|3|4|0|4|4|4|5|0|7|4|4|4|1|0|7|4|1|1|0|3|4|4|1|0|1|1|2|2|0|5|1|2|3|0|8|3|1|4|0|2|3|4|1|0|4|4|2|2|0|0|1|1|2|6|0|3|3|1|3|0|5|4|2|4|0|6|1|2|3|0|3|2|2|0|0|2|2|1|2|0|3|2|4|5|3|0|3|2|1|2|0|4|2|4|1|0|3|4|5|2|0|2|2|5|3|0|1|1|1|4|0|2|3|4|0|1|0|3|5|4|2|0|0|2|1|2|0|0|3|1|1|0|1|4|5|1|0|2|3|2|2|0|3|4|3|2|0|1|1|444</HistCounts>
+      </HistItem>
+    </Histograms>
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">65472</MDI>
+      <MDI key="STATISTICS_MEAN">33044.32368421</MDI>
+      <MDI key="STATISTICS_MINIMUM">13952</MDI>
+      <MDI key="STATISTICS_STDDEV">7047.9790887587</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
