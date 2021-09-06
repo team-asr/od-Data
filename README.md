@@ -29,3 +29,8 @@ We'd love to hear from you. You can post a comment or request for additional inf
 
 ## Licensing Terms:
 Work and material herein is released under a GNU General Public License, and a Creative Commons Attribution 4.0 (CC-BY-4.0) License. Copies of license terms can be found here: https://www.gnu.org/licenses/gpl.html and https://creativecommons.org/licenses/by/4.0/
+
+## Data Privacy and Security
+During aerial missions we discuss the areas under investigation with local authorities for notification of the general public that areas identified for aerial survery will be overflown. This is then broadcasted in the local area radio station and license sought through the relevant Civil Aviation Authority for permission. All areas under investigation are solely properties of farmers who have been requested permission for overflight of their farm, and consent forms duly signed and recorded prior overflight.
+For more information on our security and data privacy policy, please logon to https://as-research.org/data-and-privacy/
+
